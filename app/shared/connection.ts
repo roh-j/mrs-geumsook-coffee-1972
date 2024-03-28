@@ -1,5 +1,6 @@
 import PocketBase from "pocketbase";
+import { POCKET_BASE_URL } from "../constants/connection";
 
-const pb = new PocketBase("http://127.0.0.1:8090");
+const pb = new PocketBase(POCKET_BASE_URL);
 
 export { pb };

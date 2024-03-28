@@ -3,6 +3,7 @@
 import Draggable from "react-draggable";
 import Image from "next/image";
 import styles from "./popup.module.css";
+import { POCKET_BASE_URL } from "../constants/connection";
 import { useEffect, useState } from "react";
 
 const Popup = (props: any) => {
@@ -43,7 +44,7 @@ const Popup = (props: any) => {
             <Draggable key={index} positionOffset={{ x: "-50%", y: "-50%" }}>
               <div className={styles.container}>
                 <Image
-                  src={`http://127.0.0.1:8090/api/files/${row.collectionName}/${row.id}/${row.image}`}
+                  src={`${POCKET_BASE_URL}/api/files/${row.collectionName}/${row.id}/${row.image}`}
                   width={0}
                   height={0}
                   sizes="100vw"
