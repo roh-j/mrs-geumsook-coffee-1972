@@ -14,7 +14,7 @@ export interface PopupResponse {
 const PopupWrapper = async () => {
   const data: PopupResponse[] = await pb
     .collection("popups")
-    .getFullList({ filter: "active = true" });
+    .getFullList({ filter: "active = true", sort: "-order" });
 
   return <Popup data={data} />;
 };

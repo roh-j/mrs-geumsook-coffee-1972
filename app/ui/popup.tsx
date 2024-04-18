@@ -93,6 +93,7 @@ const Popup = (props: PopupProps) => {
                     sizes="100vw"
                     style={{ width: "auto", height: "100%" }}
                     alt=""
+                    priority
                   />
                   <div
                     onClick={() => {
