@@ -1,14 +1,17 @@
-import CommonQuestion from "./ui/common-question";
+import CommonInquiry from "./ui/common-inquiry";
 import MainHome from "./ui/main-home";
 import PopupWrapper from "./ui/popup-wrapper";
+import { Suspense } from "react";
 
 const MainPage = () => {
   return (
     <div>
       Welcome
       <MainHome />
-      <CommonQuestion />
-      <PopupWrapper />
+      <CommonInquiry />
+      <Suspense>
+        <PopupWrapper />
+      </Suspense>
     </div>
   );
 };

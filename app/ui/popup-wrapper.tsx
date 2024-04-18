@@ -1,6 +1,5 @@
 import Popup from "./popup";
 import { pb } from "../shared/connection";
-import { Suspense } from "react";
 
 export interface PopupResponse {
   active: boolean;
@@ -17,11 +16,7 @@ const PopupWrapper = async () => {
     .collection("popups")
     .getFullList({ filter: "active = true" });
 
-  return (
-    <Suspense>
-      <Popup data={data} />
-    </Suspense>
-  );
+  return <Popup data={data} />;
 };
 
 export default PopupWrapper;

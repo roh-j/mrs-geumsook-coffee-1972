@@ -1,12 +1,12 @@
 "use client";
 
 import ConfettiExplosion from "react-confetti-explosion";
-import styles from "./common-question.module.css";
+import styles from "./common-inquiry.module.css";
 import { pb } from "../shared/connection";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 
-const CommonQuestion = () => {
+const CommonInquiry = () => {
   const {
     register,
     handleSubmit,
@@ -16,15 +16,15 @@ const CommonQuestion = () => {
 
   const [isExploding, setIsExploding] = useState<boolean>(false);
 
-  const createQuestion = async (data: any) => {
-    const record = await pb.collection("questions").create(data);
+  const createInquiry = async (data: any) => {
+    const record = await pb.collection("inquirys").create(data);
 
     reset();
     setIsExploding(true);
   };
 
   return (
-    <form onSubmit={handleSubmit((data) => createQuestion(data))}>
+    <form onSubmit={handleSubmit((data) => createInquiry(data))}>
       <input
         {...register("name", { required: true })}
         className={styles.input}
@@ -70,4 +70,4 @@ const CommonQuestion = () => {
   );
 };
 
-export default CommonQuestion;
+export default CommonInquiry;
