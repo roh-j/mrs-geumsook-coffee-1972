@@ -77,6 +77,21 @@ const Popup = (props: PopupProps) => {
     });
   };
 
+  const closeOnce = (id: string) => {
+    setPopups(
+      popups.map((row: PopupsState) => {
+        if (row.id === id) {
+          return {
+            ...row,
+            isVisible: false,
+          };
+        }
+
+        return row;
+      })
+    );
+  };
+
   return (
     <>
       {isReady && (
@@ -101,6 +116,13 @@ const Popup = (props: PopupProps) => {
                     }}
                   >
                     오늘 하루동안 열지 않기
+                  </div>
+                  <div
+                    onClick={() => {
+                      closeOnce(row.id);
+                    }}
+                  >
+                    닫기
                   </div>
                 </div>
               </Draggable>
