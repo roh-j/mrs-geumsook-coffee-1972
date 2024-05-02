@@ -1,10 +1,8 @@
 "use client";
 
-import ConfettiExplosion from "react-confetti-explosion";
 import styles from "./common-inquiry.module.css";
 import { pb } from "../shared/connection";
 import { useForm } from "react-hook-form";
-import { useState } from "react";
 
 const CommonInquiry = () => {
   const {
@@ -14,13 +12,10 @@ const CommonInquiry = () => {
     formState: { errors },
   } = useForm();
 
-  const [isExploding, setIsExploding] = useState<boolean>(false);
-
   const createInquiry = async (data: any) => {
     const record = await pb.collection("inquirys").create(data);
 
     reset();
-    setIsExploding(true);
   };
 
   return (
@@ -55,17 +50,7 @@ const CommonInquiry = () => {
       {errors.content && (
         <p className={styles.error}>상세 내용을 입력해 주세요.</p>
       )}
-      <button type="submit">
-        상담신청
-        {isExploding && (
-          <ConfettiExplosion
-            force={0.6}
-            duration={2500}
-            particleCount={80}
-            width={1000}
-          />
-        )}
-      </button>
+      <button type="submit">상담신청</button>
     </form>
   );
 };
