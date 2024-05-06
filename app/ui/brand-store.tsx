@@ -29,6 +29,7 @@ const BrandStore = (props: BrandStoreProps) => {
       ),
     });
 
+    // 매장 표시
     data.forEach((store) => {
       // 마커 생성
       markerRef.current = new (window as any).naver.maps.Marker({
@@ -39,8 +40,7 @@ const BrandStore = (props: BrandStoreProps) => {
         map: mapRef.current,
       });
 
-      // 마커 클릭 시 이동
-      new (window as any).naver.maps.Event.addListener(
+      (window as any).naver.maps.Event.addListener(
         markerRef.current,
         "click",
         (event: any) => {
