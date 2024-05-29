@@ -1,19 +1,17 @@
-import Script from "next/script";
 import { Metadata } from "next";
 import { ReactNode } from "react";
 import "./ui/reset.css";
+import "animate.css";
+import "aos/dist/aos.css";
 
 export const metadata: Metadata = {
-  title: {
-    template: "%s | 금숙씨커피1972",
-    default: "금숙씨커피1972",
-  },
+  title: "금숙씨커피1972",
+  description: "대한민국 엄마의 자존심 금숙씨가 만들면 다 맛있습니다.",
 };
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
     <html lang="ko">
-      <Script src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=v0ct1c78hh" />
       <body>{children}</body>
     </html>
   );

@@ -1,3 +1,5 @@
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+
 html,
 body,
 div,
@@ -102,6 +104,7 @@ section {
 }
 
 body {
+  font-family: "NanumSquare";
   line-height: 1;
 }
 

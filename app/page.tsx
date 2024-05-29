@@ -1,22 +1,16 @@
-import BrandStoreWrapper from "./ui/brand-store-wrapper";
-import CommonInquiry from "./ui/common-inquiry";
-import MainHome from "./ui/main-home";
-import PopupWrapper from "./ui/popup-wrapper";
-import { Suspense } from "react";
+import Header from "./ui/header";
+import Hero from "./ui/hero";
+import Introduction from "./ui/introduction";
+import Sales from "./ui/sales";
 
 const MainPage = () => {
   return (
-    <div>
-      Welcome
-      <MainHome />
-      <CommonInquiry />
-      <Suspense>
-        <BrandStoreWrapper />
-      </Suspense>
-      <Suspense>
-        <PopupWrapper />
-      </Suspense>
-    </div>
+    <>
+      <Header />
+      <Hero />
+      <Introduction />
+      <Sales />
+    </>
   );
 };
 

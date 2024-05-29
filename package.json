@@ -16,6 +16,7 @@
     "@splidejs/react-splide": "^0.7.12",
     "@splidejs/splide-extension-auto-scroll": "^0.5.3",
     "@srexi/purecounterjs": "^1.5.0",
+    "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "js-cookie": "^3.0.5",
     "next": "^14.2.3",

@@ -1,0 +1,84 @@
+.wrapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-image: url("/hero-background.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 1920px 834px;
+  padding-top: 86px;
+  height: 994px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: 1400px) {
+    width: 1230px;
+  }
+}
+
+.introduction {
+  padding-top: 63px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+}
+
+.heading h2 {
+  margin-right: 10px;
+  animation-delay: 300ms;
+  color: #846655;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.heading h3 {
+  line-height: 1.4;
+  color: #846655;
+  font-size: 32px;
+}
+
+.heading h3 strong {
+  font-weight: bold;
+}
+
+.description {
+  margin-top: 30px;
+  animation-delay: 600ms;
+}
+
+.description h4 {
+  color: #fff;
+  font-size: 24px;
+}
+
+.description p {
+  margin-top: 24px;
+  line-height: 1.6;
+  color: #fff;
+  font-size: 18px;
+}
+
+.video {
+  background-color: #d2d2d2;
+  width: 640px;
+  height: 360px;
+}
+
+.belt {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("/belt.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 1920px 150px;
+  width: 100%;
+  max-width: 1920px;
+  height: 150px;
+}
