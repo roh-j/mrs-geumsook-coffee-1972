@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import "./ui/reset.css";
 import "animate.css";
 import "aos/dist/aos.css";
+import "@splidejs/react-splide/css";
 
 export const metadata: Metadata = {
   title: "금숙씨커피1972",

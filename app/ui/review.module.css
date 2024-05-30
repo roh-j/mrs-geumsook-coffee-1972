@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff7e3;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+.container {
+  text-align: center;
+
+  @media (min-width: 1400px) {
+    width: 1230px;
+  }
+}
+
+.container h3 {
+  line-height: 1.4;
+  color: #846655;
+  font-size: 44px;
+  font-weight: lighter;
+}
+
+.container h3 strong {
+  font-weight: bold;
+}
+
+.container p {
+  margin-top: 50px;
+  font-size: 18px;
+}
+
+.carousel {
+  margin-top: 50px;
+  width: 100%;
+  height: 609px;
+}

@@ -1,0 +1,42 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
+  padding: 150px 0;
+}
+
+.continer {
+  @media (min-width: 1400px) {
+    width: 1230px;
+  }
+}
+
+.left {
+  display: flex;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card {
+  width: 790px;
+}
+
+.body {
+  background-color: #fff;
+  padding: 46px 74px;
+}
+
+.body h4 {
+  line-height: 1.4;
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.body p {
+  margin-top: 26px;
+  line-height: 1.6;
+  font-size: 18px;
+}

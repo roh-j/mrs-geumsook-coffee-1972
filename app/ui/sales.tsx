@@ -28,31 +28,31 @@ const Sales = () => {
               증가율
             </p>
           </div>
-          <div className={styles.strong}>104313420</div>
+          <div className={styles.strong}>104,313,420원</div>
           <ul>
             <li>
-              <span className={styles.amount}>71,417,580</span>
+              <span className={styles.amount}>71,417,580원</span>
               <p className={styles.bar}></p>
               <p className={styles.label}>23'12월</p>
             </li>
             <li>
-              <span className={styles.amount}>71,417,580</span>
+              <span className={styles.amount}>73,284,520원</span>
               <p className={styles.bar}></p>
-              <p className={styles.label}>23'12월</p>
+              <p className={styles.label}>24'1월</p>
             </li>
             <li>
-              <span className={styles.amount}>71,417,580</span>
+              <span className={styles.amount}>90,311,510원</span>
               <p className={styles.bar}></p>
-              <p className={styles.label}>23'12월</p>
+              <p className={styles.label}>2월</p>
             </li>
             <li>
-              <span className={styles.amount}>71,417,580</span>
+              <span className={styles.amount}>94,888,490원</span>
               <p className={styles.bar}></p>
-              <p className={styles.label}>23'12월</p>
+              <p className={styles.label}>3월</p>
             </li>
             <li>
-              <p className={styles.bar}></p>
-              <p className={styles.label}>23'12월</p>
+              <p className={styles.bar} style={{ opacity: 0.5 }}></p>
+              <p className={styles.label}>4월</p>
             </li>
           </ul>
         </div>
@@ -71,7 +71,6 @@ const Sales = () => {
                 data-purecounter-end="6842000"
                 data-purecounter-once="false"
                 data-purecounter-separator=","
-                data-purecounter-duration="3.5"
               >
                 0
               </span>
@@ -89,7 +88,7 @@ const Sales = () => {
             8평 매장에서 말도 안되는 매출을 만들었습니다.
             <br />
             + 꾸준하고, 안전하게 매출이 성장하는 브랜드
-            <br />+ 수원본점 임대로 70만원
+            <br />+ 수원본점 임대료 70만원
           </p>
         </div>
       </div>
