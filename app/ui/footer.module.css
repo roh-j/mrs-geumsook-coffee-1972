@@ -1,0 +1,36 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: #281919;
+  padding: 55px 0;
+}
+
+.container {
+  @media (min-width: 1400px) {
+    width: 1230px;
+  }
+}
+
+.container ul {
+  display: flex;
+  column-gap: 16px;
+}
+
+.container ul li {
+  color: #888;
+  font-size: 14px;
+}
+
+.container p {
+  margin-top: 40px;
+  line-height: 1.4;
+  color: #545454;
+  font-size: 14px;
+}
+
+.container a {
+  display: block;
+  text-decoration: none;
+  color: #545454;
+  font-size: 12px;
+}

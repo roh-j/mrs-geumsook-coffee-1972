@@ -1,11 +1,14 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./header.module.css";
 
 const Header = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <Image src="/logo.png" alt="" width={173} height={30} />
+        <Link href="/">
+          <Image src="/logo.png" alt="" width={173} height={30} />
+        </Link>
         <ul className={styles.menu}>
           <li>
             <a href="/">금숙씨1972</a>
