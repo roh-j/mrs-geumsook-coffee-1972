@@ -10,9 +10,9 @@
   height: 994px;
 
   @media (max-width: 575.98px) {
-    background-size: 1280px 556px;
+    background-size: 1024px 445px;
     padding-top: 26px;
-    height: 725px;
+    height: 615px;
   }
 }
 
@@ -20,11 +20,12 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 0 10px;
+  padding: 0 20px;
   width: 1230px;
 
   @media (max-width: 1399.98px) {
-    width: 100%;
+    column-gap: 24px;
+    width: fit-content;
   }
 
   @media (max-width: 1199.98px) {
@@ -97,7 +98,7 @@
   }
 
   @media (max-width: 575.98px) {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
@@ -145,6 +146,10 @@
 
   @media (max-width: 767.98px) {
     width: 100%;
+  }
+
+  @media (max-width: 575.98px) {
+    max-width: 300px;
   }
 }
 

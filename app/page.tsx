@@ -17,9 +17,9 @@ const MainPage = () => {
       <Hero />
       <Introduction />
       <Sales />
-      {/* <Differentiation />
+      <Differentiation />
       <Feature />
-      <Review />
+      {/* <Review />
       <President />
       <Promotion />
       <Inquiry /> */}

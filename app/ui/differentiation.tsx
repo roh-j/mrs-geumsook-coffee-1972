@@ -68,7 +68,7 @@ const Differentiation = () => {
         >
           {menus.map((menu, index) => (
             <SplideSlide key={index}>
-              <Image src={menu} alt="" width={300} height={300} />
+              <Image src={menu} alt="" width={0} height={0} sizes="100vw" />
             </SplideSlide>
           ))}
         </Splide>

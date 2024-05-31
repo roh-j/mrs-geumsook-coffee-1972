@@ -6,9 +6,17 @@
 
 .container {
   margin-top: 115px;
-  padding: 0 10px;
+  padding: 0 20px;
   width: 1230px;
   text-align: center;
+
+  @media (max-width: 1399.98px) {
+    width: fit-content;
+  }
+
+  @media (max-width: 575.98px) {
+    margin-top: 58px;
+  }
 }
 
 .container h4 {
@@ -16,6 +24,10 @@
   color: #846655;
   font-size: 44px;
   font-weight: lighter;
+
+  @media (max-width: 575.98px) {
+    font-size: 24px;
+  }
 }
 
 .container h4 strong {
@@ -26,6 +38,11 @@
   margin-top: 46px;
   line-height: 1.6;
   font-size: 22px;
+
+  @media (max-width: 575.98px) {
+    margin-top: 23px;
+    font-size: 14px;
+  }
 }
 
 .container p strong {
@@ -37,4 +54,18 @@
   background-color: #dfd9d6;
   width: 100%;
   height: 300px;
+
+  @media (max-width: 575.98px) {
+    margin-top: 25px;
+    height: 150px;
+  }
+}
+
+.carousel img {
+  width: auto;
+  height: 300px;
+
+  @media (max-width: 575.98px) {
+    height: 150px;
+  }
 }

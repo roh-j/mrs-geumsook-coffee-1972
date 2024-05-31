@@ -15,12 +15,15 @@ const Feature = () => {
       <div className={styles.continer}>
         <div className={styles.left}>
           <div className={styles.card} data-aos="fade-right">
-            <Image
-              src="/feature-placeholder.png"
-              alt=""
-              width={790}
-              height={590}
-            />
+            <div className={styles.thumbnail}>
+              <Image
+                src="/feature-placeholder.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+              />
+            </div>
             <div className={styles.body}>
               <h4 data-aos="fade-up">
                 커피만? NO
@@ -35,12 +38,15 @@ const Feature = () => {
         </div>
         <div className={styles.right} style={{ marginTop: "75px" }}>
           <div className={styles.card} data-aos="fade-left">
-            <Image
-              src="/feature-placeholder.png"
-              alt=""
-              width={790}
-              height={590}
-            />
+            <div className={styles.thumbnail}>
+              <Image
+                src="/feature-placeholder.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+              />
+            </div>
             <div className={styles.body}>
               <h4 data-aos="fade-up">엄청 간.단.해.요</h4>
               <p data-aos="zoom-in" data-aos-delay="100">
@@ -58,12 +64,15 @@ const Feature = () => {
         </div>
         <div className={styles.left} style={{ marginTop: "75px" }}>
           <div className={styles.card} data-aos="fade-right">
-            <Image
-              src="/feature-placeholder.png"
-              alt=""
-              width={790}
-              height={590}
-            />
+            <div className={styles.thumbnail}>
+              <Image
+                src="/feature-placeholder.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+              />
+            </div>
             <div className={styles.body}>
               <h4 data-aos="fade-up">
                 금숙씨커피는
