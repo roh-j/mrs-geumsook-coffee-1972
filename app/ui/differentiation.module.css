@@ -6,11 +6,9 @@
 
 .container {
   margin-top: 115px;
+  padding: 0 10px;
+  width: 1230px;
   text-align: center;
-
-  @media (min-width: 1400px) {
-    width: 1230px;
-  }
 }
 
 .container h4 {

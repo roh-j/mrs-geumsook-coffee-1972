@@ -66,8 +66,8 @@ const Differentiation = () => {
           }}
           extensions={{ AutoScroll }}
         >
-          {menus.map((menu) => (
-            <SplideSlide>
+          {menus.map((menu, index) => (
+            <SplideSlide key={index}>
               <Image src={menu} alt="" width={300} height={300} />
             </SplideSlide>
           ))}

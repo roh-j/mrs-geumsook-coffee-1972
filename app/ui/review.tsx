@@ -55,8 +55,8 @@ const Review = () => {
           }}
           extensions={{ AutoScroll }}
         >
-          {reviews.map((review) => (
-            <SplideSlide>
+          {reviews.map((review, index) => (
+            <SplideSlide key={index}>
               <Image src={review} alt="" width={315} height={609} />
             </SplideSlide>
           ))}

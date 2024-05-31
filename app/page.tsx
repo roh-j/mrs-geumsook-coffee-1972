@@ -17,12 +17,12 @@ const MainPage = () => {
       <Hero />
       <Introduction />
       <Sales />
-      <Differentiation />
+      {/* <Differentiation />
       <Feature />
       <Review />
       <President />
       <Promotion />
-      <Inquiry />
+      <Inquiry /> */}
       <Footer />
     </>
   );

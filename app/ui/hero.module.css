@@ -8,24 +8,50 @@
   background-size: 1920px 834px;
   padding-top: 86px;
   height: 994px;
+
+  @media (max-width: 575.98px) {
+    background-size: 1280px 556px;
+    padding-top: 26px;
+    height: 725px;
+  }
 }
 
 .container {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
+  padding: 0 10px;
+  width: 1230px;
 
-  @media (min-width: 1400px) {
-    width: 1230px;
+  @media (max-width: 1399.98px) {
+    width: 100%;
+  }
+
+  @media (max-width: 1199.98px) {
+    display: block;
   }
 }
 
 .introduction {
   padding-top: 63px;
+
+  @media (max-width: 1199.98px) {
+    margin: auto;
+    width: fit-content;
+  }
+
+  @media (max-width: 575.98px) {
+    padding-top: 23px;
+  }
 }
 
 .heading {
   display: flex;
   align-items: center;
+
+  @media (max-width: 575.98px) {
+    display: block;
+  }
 }
 
 .heading h2 {
@@ -34,12 +60,45 @@
   color: #846655;
   font-size: 100px;
   font-weight: bold;
+
+  @media (max-width: 1399.98px) {
+    font-size: 90px;
+  }
+
+  @media (max-width: 1199.98px) {
+    font-size: 100px;
+  }
+
+  @media (max-width: 767.98px) {
+    font-size: 90px;
+  }
+
+  @media (max-width: 575.98px) {
+    margin-right: 0;
+    font-size: 70px;
+  }
 }
 
 .heading h3 {
   line-height: 1.4;
   color: #846655;
   font-size: 32px;
+
+  @media (max-width: 1399.98px) {
+    font-size: 27px;
+  }
+
+  @media (max-width: 1199.98px) {
+    font-size: 32px;
+  }
+
+  @media (max-width: 767.98px) {
+    font-size: 27px;
+  }
+
+  @media (max-width: 575.98px) {
+    font-size: 24px;
+  }
 }
 
 .heading h3 strong {
@@ -49,11 +108,19 @@
 .description {
   margin-top: 30px;
   animation-delay: 600ms;
+
+  @media (max-width: 575.98px) {
+    margin-top: 50px;
+  }
 }
 
 .description h4 {
   color: #fff;
   font-size: 24px;
+
+  @media (max-width: 575.98px) {
+    font-size: 20px;
+  }
 }
 
 .description p {
@@ -61,12 +128,24 @@
   line-height: 1.6;
   color: #fff;
   font-size: 18px;
+
+  @media (max-width: 575.98px) {
+    font-size: 15px;
+  }
 }
 
 .video {
   background-color: #d2d2d2;
   width: 640px;
-  height: 360px;
+  aspect-ratio: 16 / 9;
+
+  @media (max-width: 1199.98px) {
+    margin: 63px auto 0 auto;
+  }
+
+  @media (max-width: 767.98px) {
+    width: 100%;
+  }
 }
 
 .belt {
@@ -81,4 +160,8 @@
   width: 100%;
   max-width: 1920px;
   height: 150px;
+
+  @media (max-width: 575.98px) {
+    height: 11px;
+  }
 }

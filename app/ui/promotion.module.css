@@ -6,9 +6,8 @@
 }
 
 .container {
-  @media (min-width: 1400px) {
-    width: 1230px;
-  }
+  padding: 0 10px;
+  width: 1230px;
 }
 
 .container h3 {
@@ -116,9 +115,8 @@
 }
 
 .darkContainer {
-  @media (min-width: 1400px) {
-    width: 1230px;
-  }
+  padding: 0 10px;
+  width: 1230px;
 }
 
 .darkContainer h3 {

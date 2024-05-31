@@ -20,6 +20,31 @@ const Sales = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
+        <div className={styles.mobileHeader} data-aos="fade-up">
+          <h4>
+            24년 5월 달 일일매출{" "}
+            <strong>
+              신기록{" "}
+              <span
+                className="purecounter"
+                data-purecounter-start="0"
+                data-purecounter-end="6842000"
+                data-purecounter-once="false"
+                data-purecounter-separator=","
+              >
+                0
+              </span>
+              원
+            </strong>
+          </h4>
+          <h3>
+            금숙씨커피본점 <strong>8평 매장</strong>
+            <br />
+            <strong className="animate__animated animate__flash animate__slower animate__infinite">
+              월 매출 1억원 돌파!!!
+            </strong>
+          </h3>
+        </div>
         <div className={styles.chart} data-aos="">
           <div className={styles.emphasis}>
             <p className="animate__animated animate__pulse animate__infinite">
@@ -56,11 +81,15 @@ const Sales = () => {
             </li>
           </ul>
         </div>
-        <div
-          className={styles.description}
-          data-aos="fade-up"
-          data-aos-delay="1500"
-        >
+        <div className={styles.mobileFooter} data-aos="fade-up">
+          <p>
+            8평 매장에서 말도 안되는 매출을 만들었습니다.
+            <br />
+            + 꾸준하고, 안전하게 매출이 성장하는 브랜드
+            <br />+ 수원본점 임대료 70만원
+          </p>
+        </div>
+        <div className={styles.description} data-aos="fade-up">
           <h4>
             24년 5월 달 일일매출{" "}
             <strong>

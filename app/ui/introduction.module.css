@@ -1,15 +1,27 @@
 .wrapper {
   display: flex;
-  align-items: flex-end;
   justify-content: center;
-  background-image: url("/introduction-background.png");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: 1920px 1374px;
-  height: 1374px;
 }
 
 .container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-image: url(/introduction-background.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 1920px 1374px;
+  padding: 0 10px;
+  width: 1920px;
+  aspect-ratio: 959 / 687;
+
+  @media (max-width: 1399.98px) {
+    background-size: 100% auto;
+    width: 100%;
+  }
+}
+
+.container p {
   margin-bottom: 190px;
   text-align: center;
   line-height: 1.4;
@@ -17,11 +29,26 @@
   font-size: 58px;
   font-weight: lighter;
 
-  @media (min-width: 1400px) {
-    width: 1230px;
+  @media (max-width: 1399.98px) {
+    font-size: 46px;
+  }
+
+  @media (max-width: 991.98px) {
+    margin-bottom: 120px;
+    font-size: 38px;
+  }
+
+  @media (max-width: 767.98px) {
+    margin-bottom: 80px;
+    font-size: 32px;
+  }
+
+  @media (max-width: 575.98px) {
+    margin-bottom: 20px;
+    font-size: 20px;
   }
 }
 
-.container strong {
+.container p strong {
   font-weight: bold;
 }
