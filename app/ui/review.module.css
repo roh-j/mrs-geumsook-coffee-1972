@@ -33,4 +33,19 @@
   margin-top: 50px;
   width: 100%;
   height: 609px;
+
+  @media (max-width: 575.98px) {
+    height: 280px;
+  }
+}
+
+.carousel img {
+  margin-left: 58px;
+  width: auto;
+  height: 609px;
+
+  @media (max-width: 575.98px) {
+    margin-left: 18px;
+    height: 280px;
+  }
 }

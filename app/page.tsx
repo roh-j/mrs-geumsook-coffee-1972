@@ -19,10 +19,10 @@ const MainPage = () => {
       <Sales />
       <Differentiation />
       <Feature />
-      {/* <Review />
+      <Review />
       <President />
       <Promotion />
-      <Inquiry /> */}
+      {/* <Inquiry /> */}
       <Footer />
     </>
   );

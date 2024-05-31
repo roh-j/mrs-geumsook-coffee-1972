@@ -5,12 +5,12 @@
   background-image: url("/hero-background.png");
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 1920px 834px;
+  background-size: 1920px auto;
   padding-top: 86px;
   height: 994px;
 
   @media (max-width: 575.98px) {
-    background-size: 1024px 445px;
+    background-size: 1024px auto;
     padding-top: 26px;
     height: 615px;
   }
@@ -19,27 +19,18 @@
 .container {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  column-gap: 24px;
   padding: 0 20px;
-  width: 1230px;
-
-  @media (max-width: 1399.98px) {
-    column-gap: 24px;
-    width: fit-content;
-  }
+  width: fit-content;
 
   @media (max-width: 1199.98px) {
-    display: block;
+    flex-direction: column;
+    column-gap: 0;
   }
 }
 
 .introduction {
   padding-top: 63px;
-
-  @media (max-width: 1199.98px) {
-    margin: auto;
-    width: fit-content;
-  }
 
   @media (max-width: 575.98px) {
     padding-top: 23px;
@@ -161,7 +152,7 @@
   background-image: url("/belt.png");
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 1920px 150px;
+  background-size: 1920px auto;
   width: 100%;
   max-width: 1920px;
   height: 150px;

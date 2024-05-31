@@ -91,7 +91,7 @@
   background-image: url("/promotion-badge.png");
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 90px 61px;
+  background-size: 90px auto;
   width: 90px;
   height: 61px;
   color: #bd2929;

@@ -1,36 +1,43 @@
 .wrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-color: #f6f6f6;
   overflow: hidden;
 }
 
 .container {
   display: flex;
-  justify-content: space-between;
-  margin: 115px 0 145px 0;
+  justify-content: center;
+  column-gap: 65px;
+  margin-top: 115px;
+  margin-bottom: 145px;
   padding: 0 20px;
-  width: 1350px;
+
+  @media (max-width: 1399.98px) {
+    width: fit-content;
+  }
 
   @media (max-width: 991.98px) {
     flex-direction: column;
-    margin: 58px 0 73px 0;
-    width: fit-content;
+    column-gap: 0;
+    margin: 0;
   }
 }
 
-.mobileHeader {
+.mobileTop {
   display: none;
 
   @media (max-width: 991.98px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 58px;
     text-align: center;
   }
 }
 
-.mobileHeader h4 {
+.mobileTop h4 {
   margin-bottom: 10px;
   color: #846655;
   font-size: 15px;
@@ -40,11 +47,11 @@
   }
 }
 
-.mobileHeader h4 strong {
+.mobileTop h4 strong {
   font-weight: bold;
 }
 
-.mobileHeader h3 {
+.mobileTop h3 {
   margin-bottom: 34px;
   line-height: 1.4;
   color: #846655;
@@ -56,7 +63,7 @@
   }
 }
 
-.mobileHeader h3 strong {
+.mobileTop h3 strong {
   font-size: 28px;
   font-weight: bold;
 
@@ -294,14 +301,16 @@
   }
 }
 
-.mobileFooter p {
+.mobileBottom p {
   display: none;
   margin-top: 34px;
+  margin-bottom: 73px;
   line-height: 1.6;
   font-size: 15px;
 
   @media (max-width: 991.98px) {
-    display: block;
+    display: flex;
+    justify-content: center;
   }
 
   @media (min-width: 576px) {

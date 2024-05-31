@@ -48,7 +48,6 @@ const Review = () => {
             autoWidth: true,
             arrows: false,
             pagination: false,
-            gap: 58,
             autoScroll: {
               pauseOnHover: false,
             },
@@ -57,7 +56,7 @@ const Review = () => {
         >
           {reviews.map((review, index) => (
             <SplideSlide key={index}>
-              <Image src={review} alt="" width={315} height={609} />
+              <Image src={review} alt="" width={0} height={0} sizes="100vw" />
             </SplideSlide>
           ))}
         </Splide>
