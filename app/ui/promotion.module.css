@@ -272,12 +272,36 @@
   line-height: 1.2;
   font-size: 40px;
   font-weight: bold;
+
+  @media (max-width: 1399.98px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 767.98px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 575.98px) {
+    font-size: 20px;
+  }
 }
 
 .items li h5 span {
   color: #bd2929;
   font-size: 60px;
   font-weight: bolder;
+
+  @media (max-width: 1399.98px) {
+    font-size: 42px;
+  }
+
+  @media (max-width: 767.98px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 575.98px) {
+    font-size: 30px;
+  }
 }
 
 .items li h5 p {
@@ -289,6 +313,21 @@
 .items li h6 {
   margin-bottom: 10px;
   font-size: 24px;
+
+  @media (max-width: 1399.98px) {
+    margin-bottom: 7px;
+    font-size: 17px;
+  }
+
+  @media (max-width: 767.98px) {
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 575.98px) {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
 }
 
 .darkWrapper {
@@ -301,14 +340,17 @@
   width: 100%;
 
   @media (max-width: 1399.98px) {
+    padding-top: 302px;
     padding-bottom: 139px;
   }
 
   @media (max-width: 767.98px) {
+    padding-top: 282px;
     padding-bottom: 119px;
   }
 
   @media (max-width: 575.98px) {
+    padding-top: 262px;
     padding-bottom: 99px;
   }
 }

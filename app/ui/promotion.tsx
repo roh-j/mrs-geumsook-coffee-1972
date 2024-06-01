@@ -25,7 +25,10 @@ const Promotion = () => {
             <p>처음 오픈하시는 점주님들 부담을 덜어드리겠습니다!</p>
           </div>
           <div className={styles.card}>
-            <h4 className="animate__animated animate__pulse animate__slower animate__infinite">
+            <h4
+              data-aos="zoom-in"
+              className="animate__animated animate__pulse animate__slower animate__infinite"
+            >
               <Image
                 src="/promotion-benefit-wing-left.png"
                 alt=""
@@ -54,25 +57,37 @@ const Promotion = () => {
                     className="fa-solid fa-down-long"
                   ></i>
                   <br />
-                  중고집기 <span>OK</span>
+                  중고집기{" "}
+                  <span className="animate__animated animate__flash animate__slow animate__infinite">
+                    OK
+                  </span>
                 </h5>
               </li>
               <li data-aos="zoom-in">
                 <div className={styles.badge}>2</div>
                 <h5>
-                  가맹비 <span>無</span>
+                  가맹비{" "}
+                  <span className="animate__animated animate__flash animate__slow animate__infinite">
+                    無
+                  </span>
                 </h5>
               </li>
               <li data-aos="zoom-in">
                 <div className={styles.badge}>3</div>
                 <h5>
-                  계약 이행보증금 <span>無</span>
+                  계약 이행보증금{" "}
+                  <span className="animate__animated animate__flash animate__slow animate__infinite">
+                    無
+                  </span>
                 </h5>
               </li>
               <li data-aos="zoom-in">
                 <div className={styles.badge}>4</div>
                 <h5>
-                  인테리어 마진 <span>無</span>
+                  인테리어 마진{" "}
+                  <span className="animate__animated animate__flash animate__slow animate__infinite">
+                    無
+                  </span>
                   <p>(인테리어 개별시공 가능)</p>
                 </h5>
               </li>
@@ -89,7 +104,10 @@ const Promotion = () => {
                 <div className={styles.badge}>6</div>
                 <h5>
                   로얄티 매출의 2.5%{" "}
-                  <i style={{ color: "#bd2929" }} className="fa-solid fa-x"></i>
+                  <i
+                    style={{ color: "#bd2929" }}
+                    className="fa-solid fa-x animate__animated animate__flash animate__slow animate__infinite"
+                  ></i>
                   <br />
                   <i className="fa-solid fa-arrow-right"></i> 매달 30만원
                 </h5>
