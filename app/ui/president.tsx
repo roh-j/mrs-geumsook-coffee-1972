@@ -4,17 +4,18 @@ const President = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <h3 data-aos="fade-up">
+        <h3 data-aos-offset="200" data-aos="fade-up">
           젊은대표가 직접 <strong>관리하는 가맹점</strong>
           <br />
           <strong>점주님과 상생</strong> 프랜차이즈
         </h3>
-        <p data-aos="fade-up" data-aos-delay="300">
+        <p data-aos-offset="200" data-aos="fade-up" data-aos-delay="300">
           항상 정직한 모습 열정있는 모습 상생하는 마음으로 늘 점주님과
           함께하겠습니다.
         </p>
         <p
           style={{ marginTop: "30px" }}
+          data-aos-offset="200"
           data-aos="zoom-in"
           data-aos-delay="500"
         >

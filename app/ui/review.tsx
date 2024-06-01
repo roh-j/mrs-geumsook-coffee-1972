@@ -27,11 +27,11 @@ const Review = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <h3 data-aos="fade-up">
+        <h3 data-aos-offset="200" data-aos="fade-up">
           빠르고 맛있게 - !<br />
           <strong>금숙씨커피</strong>의 철학으로 빛낸 성과
         </h3>
-        <p data-aos="zoom-in" data-aos-delay="200">
+        <p data-aos-offset="200" data-aos="zoom-in" data-aos-delay="200">
           100% 고객님들이 직접 남겨주신 후기입니다.
         </p>
       </div>

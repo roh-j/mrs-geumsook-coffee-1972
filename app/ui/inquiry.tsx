@@ -4,8 +4,10 @@ const Inquiry = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <h4 data-aos="fade-up">금숙씨커피와 함께 하실</h4>
-        <h3 data-aos="zoom-in" data-aos-delay="300">
+        <h4 data-aos-offset="200" data-aos="fade-up">
+          금숙씨커피와 함께 하실
+        </h4>
+        <h3 data-aos-offset="200" data-aos="zoom-in" data-aos-delay="300">
           <strong>가족점</strong> 모집
         </h3>
         <div className={styles.privacy}>
@@ -19,7 +21,7 @@ const Inquiry = () => {
         <h5>
           상담자 정보 <strong>* 필수 입력 항목</strong>
         </h5>
-        <ul data-aos="fade-up" className={styles.form}>
+        <ul data-aos-offset="200" data-aos="fade-up" className={styles.form}>
           <li>
             <div className={styles.inputName}>
               <input type="text" placeholder="이름 *" />

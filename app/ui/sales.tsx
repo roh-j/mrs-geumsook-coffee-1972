@@ -4,7 +4,11 @@ const Sales = () => {
   return (
     <div className={styles.wrapper}>
       <div>
-        <div className={styles.mobileTop} data-aos="fade-up">
+        <div
+          className={styles.mobileTop}
+          data-aos-offset="200"
+          data-aos="fade-up"
+        >
           <h4>
             24년 5월 달 일일매출{" "}
             <strong>
@@ -30,7 +34,7 @@ const Sales = () => {
           </h3>
         </div>
         <div className={styles.container}>
-          <div className={styles.chart} data-aos="">
+          <div className={styles.chart} data-aos-offset="200" data-aos="">
             <div className={styles.sticker}>
               <p className="animate__animated animate__pulse animate__infinite">
                 월별 매출
@@ -66,7 +70,11 @@ const Sales = () => {
               </li>
             </ul>
           </div>
-          <div className={styles.description} data-aos="fade-up">
+          <div
+            className={styles.description}
+            data-aos-offset="200"
+            data-aos="fade-up"
+          >
             <h4>
               24년 5월 달 일일매출{" "}
               <strong>
@@ -98,7 +106,11 @@ const Sales = () => {
             </p>
           </div>
         </div>
-        <div className={styles.mobileBottom} data-aos="fade-up">
+        <div
+          className={styles.mobileBottom}
+          data-aos-offset="200"
+          data-aos="fade-up"
+        >
           <p>
             8평 매장에서 말도 안되는 매출을 만들었습니다.
             <br />
