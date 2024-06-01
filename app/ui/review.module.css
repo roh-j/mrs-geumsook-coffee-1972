@@ -5,6 +5,17 @@
   background-color: #fff7e3;
   padding-top: 150px;
   padding-bottom: 50px;
+  overflow: hidden;
+
+  @media (max-width: 1199.98px) {
+    padding-top: 105px;
+    padding-bottom: 35px;
+  }
+
+  @media (max-width: 575.98px) {
+    padding-top: 75px;
+    padding-bottom: 25px;
+  }
 }
 
 .container {
@@ -18,6 +29,14 @@
   color: #846655;
   font-size: 44px;
   font-weight: lighter;
+
+  @media (max-width: 1199.98px) {
+    font-size: 31px;
+  }
+
+  @media (max-width: 575.98px) {
+    font-size: 24px;
+  }
 }
 
 .container h3 strong {
@@ -27,6 +46,16 @@
 .container p {
   margin-top: 50px;
   font-size: 18px;
+
+  @media (max-width: 1199.98px) {
+    margin-top: 35px;
+    font-size: 15px;
+  }
+
+  @media (max-width: 575.98px) {
+    margin-top: 25px;
+    font-size: 15px;
+  }
 }
 
 .carousel {
@@ -34,7 +63,13 @@
   width: 100%;
   height: 609px;
 
+  @media (max-width: 1199.98px) {
+    margin-top: 35px;
+    height: 320px;
+  }
+
   @media (max-width: 575.98px) {
+    margin-top: 25px;
     height: 280px;
   }
 }
@@ -43,6 +78,11 @@
   margin-left: 58px;
   width: auto;
   height: 609px;
+
+  @media (max-width: 1199.98px) {
+    margin-left: 18px;
+    height: 320px;
+  }
 
   @media (max-width: 575.98px) {
     margin-left: 18px;

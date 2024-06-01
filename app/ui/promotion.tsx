@@ -3,51 +3,56 @@ import styles from "./promotion.module.css";
 
 const Promotion = () => {
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.container}>
-        <h3>
-          금숙씨커피 <span>오픈</span> 프로모션
-        </h3>
-        <div className={styles.emphasis}>
-          <p>처음 오픈하시는 점주님들 부담을 덜어드리겠습니다!</p>
-        </div>
-        <div className={styles.box}>
-          <h4 className="animate__animated animate__pulse animate__slower animate__infinite">
-            <Image
-              src="/promotion-benefit-wing-left.png"
-              alt=""
-              width={68}
-              height={71}
-            />
-            초대박 한정혜택
-            <Image
-              src="/promotion-benefit-wing-right.png"
-              alt=""
-              width={68}
-              height={71}
-            />
-          </h4>
-          <ul className={styles.benefit}>
-            <li>
-              <div className={styles.badge}>1</div>
-              <h5>창업비</h5>
-            </li>
-            <li>
-              <div className={styles.badge}>2</div>
-            </li>
-            <li>
-              <div className={styles.badge}>3</div>
-            </li>
-            <li>
-              <div className={styles.badge}>4</div>
-            </li>
-            <li>
-              <div className={styles.badge}>5</div>
-            </li>
-            <li>
-              <div className={styles.badge}>6</div>
-            </li>
-          </ul>
+    <>
+      <div className={styles.wrapper}>
+        <div className={styles.container}>
+          <h3>
+            금숙씨커피 <span>오픈</span> 프로모션
+          </h3>
+          <div className={styles.emphasis}>
+            <p>처음 오픈하시는 점주님들 부담을 덜어드리겠습니다!</p>
+          </div>
+          <div className={styles.card}>
+            <h4 className="animate__animated animate__pulse animate__slower animate__infinite">
+              <Image
+                src="/promotion-benefit-wing-left.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+                className={styles.decoration}
+              />
+              초대박 한정혜택
+              <Image
+                src="/promotion-benefit-wing-right.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+                className={styles.decoration}
+              />
+            </h4>
+            <ul className={styles.items}>
+              <li>
+                <div className={styles.badge}>1</div>
+              </li>
+              <li>
+                <div className={styles.badge}>2</div>
+              </li>
+              <li>
+                <div className={styles.badge}>3</div>
+              </li>
+              <li>
+                <div className={styles.badge}>4</div>
+              </li>
+              <li>
+                <div className={styles.badge}>5</div>
+              </li>
+              <li>
+                <div className={styles.badge}>6</div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className={styles.darkWrapper}>
@@ -59,6 +64,11 @@ const Promotion = () => {
             <strong>'금숙씨 만의 성공 운영 시스템'</strong>을 도입했습니다.
           </h3>
           <table>
+            <colgroup>
+              <col />
+              <col />
+              <col />
+            </colgroup>
             <thead>
               <tr>
                 <th colSpan={3}>금숙씨커피1972</th>
@@ -129,15 +139,7 @@ const Promotion = () => {
                 <td>메뉴판, 배너, 내/외부 홍보물, 메뉴판 거치대</td>
               </tr>
               <tr>
-                <td
-                  colSpan={3}
-                  style={{
-                    color: "#846655",
-                    backgroundColor: "#fff7e3",
-                    fontSize: "22px",
-                    fontWeight: "bold",
-                  }}
-                >
+                <td colSpan={3} className={styles.discount}>
                   기본 구성 소계 52,500,000 → 42,000,000원
                 </td>
               </tr>
@@ -151,15 +153,7 @@ const Promotion = () => {
                 </td>
               </tr>
               <tr>
-                <td
-                  colSpan={3}
-                  style={{
-                    color: "#fff",
-                    backgroundColor: "#846655",
-                    fontSize: "22px",
-                    fontWeight: "bold",
-                  }}
-                >
+                <td colSpan={3} className={styles.total}>
                   전체 소계 57,000,000원
                 </td>
               </tr>
@@ -177,7 +171,7 @@ const Promotion = () => {
           </table>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

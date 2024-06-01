@@ -4,6 +4,10 @@
   background-color: #f6f6f6;
   padding: 150px 0;
   overflow: hidden;
+
+  @media (max-width: 575.98px) {
+    padding: 75px 0;
+  }
 }
 
 .continer {
@@ -17,15 +21,37 @@
 
 .left {
   display: flex;
+  margin-top: 75px;
+
+  @media (max-width: 1199.98px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 575.98px) {
+    margin-top: 38px;
+  }
 }
 
 .right {
   display: flex;
   justify-content: flex-end;
+  margin-top: 75px;
+
+  @media (max-width: 1199.98px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 575.98px) {
+    margin-top: 38px;
+  }
 }
 
 .card {
   width: 790px;
+
+  @media (max-width: 1199.98px) {
+    width: 536px;
+  }
 
   @media (max-width: 575.98px) {
     width: 100%;
@@ -45,6 +71,10 @@
   background-color: #fff;
   padding: 46px 74px;
 
+  @media (max-width: 1199.98px) {
+    padding: 31px 50px;
+  }
+
   @media (max-width: 575.98px) {
     padding: 10px 12px;
   }
@@ -55,8 +85,12 @@
   font-size: 44px;
   font-weight: bold;
 
+  @media (max-width: 1199.98px) {
+    font-size: 32px;
+  }
+
   @media (max-width: 575.98px) {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
@@ -65,8 +99,13 @@
   line-height: 1.6;
   font-size: 18px;
 
+  @media (max-width: 1199.98px) {
+    margin-top: 18px;
+    font-size: 18px;
+  }
+
   @media (max-width: 575.98px) {
     margin-top: 16px;
-    font-size: 14px;
+    font-size: 15px;
   }
 }

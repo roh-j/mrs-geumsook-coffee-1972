@@ -13,7 +13,7 @@ const Feature = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.continer}>
-        <div className={styles.left}>
+        <div className={styles.left} style={{ marginTop: "0" }}>
           <div className={styles.card} data-aos="fade-right">
             <div className={styles.thumbnail}>
               <Image
@@ -36,7 +36,7 @@ const Feature = () => {
             </div>
           </div>
         </div>
-        <div className={styles.right} style={{ marginTop: "75px" }}>
+        <div className={styles.right}>
           <div className={styles.card} data-aos="fade-left">
             <div className={styles.thumbnail}>
               <Image
@@ -62,7 +62,7 @@ const Feature = () => {
             </div>
           </div>
         </div>
-        <div className={styles.left} style={{ marginTop: "75px" }}>
+        <div className={styles.left}>
           <div className={styles.card} data-aos="fade-right">
             <div className={styles.thumbnail}>
               <Image
