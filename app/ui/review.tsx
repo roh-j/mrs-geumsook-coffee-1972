@@ -1,12 +1,10 @@
 "use client";
 
-import AOS from "aos";
 import Image from "next/image";
 import styles from "./review.module.css";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 // @ts-ignore
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import { useEffect } from "react";
 
 const REVIEW_IMAGES = [
   "/review-1.png",
@@ -25,10 +23,6 @@ const Review = () => {
     ...REVIEW_IMAGES,
     ...REVIEW_IMAGES,
   ];
-
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
   return (
     <div className={styles.wrapper}>

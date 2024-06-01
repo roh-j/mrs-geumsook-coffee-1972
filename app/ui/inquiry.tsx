@@ -1,15 +1,7 @@
-"use client";
-
-import AOS from "aos";
 import Image from "next/image";
 import styles from "./inquiry.module.css";
-import { useEffect } from "react";
 
 const Inquiry = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>

@@ -10,6 +10,7 @@ import President from "./ui/president";
 import Promotion from "./ui/promotion";
 import Review from "./ui/review";
 import Sales from "./ui/sales";
+import Script from "./ui/script";
 
 const MainPage = () => {
   return (
@@ -26,6 +27,7 @@ const MainPage = () => {
       <Promotion />
       <Inquiry />
       <Footer />
+      <Script />
     </>
   );
 };

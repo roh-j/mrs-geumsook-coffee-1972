@@ -1,14 +1,6 @@
-"use client";
-
-import AOS from "aos";
 import styles from "./introduction.module.css";
-import { useEffect } from "react";
 
 const Introduction = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>

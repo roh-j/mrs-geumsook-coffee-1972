@@ -1,15 +1,7 @@
-"use client";
-
-import AOS from "aos";
 import Image from "next/image";
 import styles from "./promotion.module.css";
-import { useEffect } from "react";
 
 const Promotion = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <>
       <div className={styles.wrapper}>

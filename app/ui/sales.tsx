@@ -1,22 +1,6 @@
-"use client";
-
-import AOS from "aos";
 import styles from "./sales.module.css";
-import { useEffect } from "react";
 
 const Sales = () => {
-  const initPureCounter = async () => {
-    // @ts-ignore
-    const { default: PureCounter } = await import("@srexi/purecounterjs");
-
-    new PureCounter();
-  };
-
-  useEffect(() => {
-    AOS.init();
-    initPureCounter();
-  }, []);
-
   return (
     <div className={styles.wrapper}>
       <div>

@@ -1,12 +1,10 @@
 "use client";
 
-import AOS from "aos";
 import Image from "next/image";
 import styles from "./differentiation.module.css";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 // @ts-ignore
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import { useEffect } from "react";
 
 const MENU_IMAGES = [
   "/menu-tteokbokki.png",
@@ -28,10 +26,6 @@ const Differentiation = () => {
     ...MENU_IMAGES,
     ...MENU_IMAGES,
   ];
-
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
   return (
     <div className={styles.wrapper}>
