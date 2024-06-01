@@ -79,16 +79,16 @@
   }
 }
 
-.container .privacy .icon {
-  width: 40px;
+.container .privacy i {
   height: auto;
+  font-size: 38px;
 
   @media (max-width: 1399.98px) {
-    width: 28px;
+    font-size: 26px;
   }
 
   @media (max-width: 575.98px) {
-    width: 26px;
+    font-size: 24px;
   }
 }
 

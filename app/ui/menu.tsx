@@ -1,47 +1,53 @@
-import styles from "./menu.module.css";
 import Image from "next/image";
+import styles from "./menu.module.css";
 
 const Menu = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <h3>추천메뉴</h3>
+        <h3 data-aos="fade-up">추천메뉴</h3>
         <ul className={styles.bestItems}>
-          <li>
+          <li data-aos="fade-up">
             <div className={styles.sticker}>BEST</div>
-            <Image
-              src="/menu-best-americano.png"
-              alt=""
-              width={0}
-              height={0}
-              sizes="100vw"
-            />
+            <div style={{ width: "100%", aspectRatio: 1 }}>
+              <Image
+                src="/menu-best-americano.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+              />
+            </div>
             <h5>아메리카노</h5>
           </li>
-          <li>
+          <li data-aos="fade-up">
             <div className={styles.sticker}>BEST</div>
-            <Image
-              src="/menu-best-pomegranate-iced-tea.png"
-              alt=""
-              width={0}
-              height={0}
-              sizes="100vw"
-            />
+            <div style={{ width: "100%", aspectRatio: 1 }}>
+              <Image
+                src="/menu-best-pomegranate-iced-tea.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+              />
+            </div>
             <h5>아메리카노</h5>
           </li>
-          <li>
+          <li data-aos="fade-up">
             <div className={styles.sticker}>BEST</div>
-            <Image
-              src="/menu-best-chamomile-tea.png"
-              alt=""
-              width={0}
-              height={0}
-              sizes="100vw"
-            />
+            <div style={{ width: "100%", aspectRatio: 1 }}>
+              <Image
+                src="/menu-best-chamomile-tea.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+              />
+            </div>
             <h5>아메리카노</h5>
           </li>
         </ul>
-        <div className={styles.selection}>
+        <div data-aos="zoom-in" className={styles.selection}>
           <ul>
             <li>
               <i className="fa-regular fa-square"></i> 1L 대용량
@@ -88,44 +94,52 @@ const Menu = () => {
           </ul>
         </div>
         <ul className={styles.items}>
-          <li>
-            <Image
-              src="/menu-best-americano.png"
-              alt=""
-              width={0}
-              height={0}
-              sizes="100vw"
-            />
+          <li data-aos="fade-up">
+            <div style={{ width: "100%", aspectRatio: 1 }}>
+              <Image
+                src="/menu-best-americano.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+              />
+            </div>
             <h5>아메리카노</h5>
           </li>
-          <li>
-            <Image
-              src="/menu-best-americano.png"
-              alt=""
-              width={0}
-              height={0}
-              sizes="100vw"
-            />
+          <li data-aos="fade-up">
+            <div style={{ width: "100%", aspectRatio: 1 }}>
+              <Image
+                src="/menu-best-americano.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+              />
+            </div>
             <h5>아메리카노</h5>
           </li>
-          <li>
-            <Image
-              src="/menu-best-americano.png"
-              alt=""
-              width={0}
-              height={0}
-              sizes="100vw"
-            />
+          <li data-aos="fade-up">
+            <div style={{ width: "100%", aspectRatio: 1 }}>
+              <Image
+                src="/menu-best-americano.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+              />
+            </div>
             <h5>아메리카노</h5>
           </li>
-          <li>
-            <Image
-              src="/menu-best-americano.png"
-              alt=""
-              width={0}
-              height={0}
-              sizes="100vw"
-            />
+          <li data-aos="fade-up">
+            <div style={{ width: "100%", aspectRatio: 1 }}>
+              <Image
+                src="/menu-best-americano.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+              />
+            </div>
             <h5>아메리카노</h5>
           </li>
         </ul>

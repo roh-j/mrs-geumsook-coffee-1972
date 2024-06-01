@@ -12,8 +12,9 @@ const Script = () => {
   };
 
   useEffect(() => {
-    AOS.init(); // 스크롤 애니메이션
-    loadPureCounter(); // 숫자 카운터
+    loadPureCounter();
+
+    AOS.init();
   }, []);
 
   return <></>;

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./inquiry.module.css";
 
 const Inquiry = () => {
@@ -10,21 +9,17 @@ const Inquiry = () => {
           <strong>가족점</strong> 모집
         </h3>
         <div className={styles.privacy}>
-          <Image
-            src="/icon-checkbox.png"
-            alt=""
-            width={0}
-            height={0}
-            sizes="100vw"
-            className={styles.icon}
-          />
+          <i
+            className="fa-solid fa-circle-check"
+            style={{ color: "#d9d9d9" }}
+          ></i>
           개인정보취급방침을 읽었으며 이에 동의합니다.
           <button type="button">전문보기</button>
         </div>
         <h5>
           상담자 정보 <strong>* 필수 입력 항목</strong>
         </h5>
-        <ul className={styles.form}>
+        <ul data-aos="fade-up" className={styles.form}>
           <li>
             <div className={styles.inputName}>
               <input type="text" placeholder="이름 *" />

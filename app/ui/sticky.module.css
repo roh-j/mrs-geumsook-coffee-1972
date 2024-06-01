@@ -1,0 +1,107 @@
+.wrapper {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  justify-content: center;
+  z-index: 20;
+  background-color: #846655;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 1230px;
+  height: 80px;
+
+  @media (max-width: 1399.98px) {
+    flex: 1;
+    min-width: 0;
+  }
+
+  @media (max-width: 991.98px) {
+    height: 64px;
+  }
+}
+
+.title {
+  color: #fff;
+  font-size: 35px;
+  font-weight: bold;
+  text-wrap: nowrap;
+
+  @media (max-width: 991.98px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 575.98px) {
+    font-size: 18px;
+  }
+}
+
+.title span {
+  color: #f4e7b7;
+  font-weight: bold;
+}
+
+.form {
+  width: 510px;
+}
+
+.form input[type="text"] {
+  flex: 1;
+  border: none;
+  background-color: #fff;
+  padding: 13px 20px;
+  min-width: 0;
+  font-size: 18px;
+}
+
+.inputPhone {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 15px;
+
+  @media (max-width: 1399.98px) {
+    display: none;
+  }
+}
+
+.privacy {
+  display: flex;
+  align-items: center;
+  color: #fff;
+
+  @media (max-width: 1399.98px) {
+    display: none;
+  }
+}
+
+.privacy i {
+  margin-right: 10px;
+  font-size: 39px;
+}
+
+.submit button {
+  border: none;
+  background-color: #f4e7b7;
+  width: 150px;
+  height: 50px;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+
+  @media (max-width: 991.98px) {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 575.98px) {
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+  }
+}

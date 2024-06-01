@@ -11,6 +11,7 @@ import Promotion from "./ui/promotion";
 import Review from "./ui/review";
 import Sales from "./ui/sales";
 import Script from "./ui/script";
+import Sticky from "./ui/sticky";
 
 const MainPage = () => {
   return (
@@ -27,6 +28,7 @@ const MainPage = () => {
       <Promotion />
       <Inquiry />
       <Footer />
+      <Sticky />
       <Script />
     </>
   );

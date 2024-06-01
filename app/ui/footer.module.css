@@ -1,8 +1,13 @@
 .wrapper {
   display: flex;
   justify-content: center;
+  margin-bottom: 80px;
   background-color: #281919;
   padding: 55px 0;
+
+  @media (max-width: 991.98px) {
+    margin-bottom: 64px;
+  }
 }
 
 .container {
@@ -15,10 +20,6 @@
   column-gap: 16px;
 
   @media (max-width: 767.98px) {
-    display: block;
-  }
-
-  @media (max-width: 575.98px) {
     display: block;
   }
 }
