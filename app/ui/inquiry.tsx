@@ -1,20 +1,29 @@
+"use client";
+
+import AOS from "aos";
 import Image from "next/image";
 import styles from "./inquiry.module.css";
+import { useEffect } from "react";
 
 const Inquiry = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <h4>금숙씨커피와 함께 하실</h4>
-        <h3>
+        <h4 data-aos="fade-up">금숙씨커피와 함께 하실</h4>
+        <h3 data-aos="zoom-in" data-aos-delay="300">
           <strong>가족점</strong> 모집
         </h3>
         <div className={styles.privacy}>
           <Image
             src="/icon-checkbox.png"
             alt=""
-            width={40}
-            height={40}
+            width={0}
+            height={0}
+            sizes="100vw"
             className={styles.icon}
           />
           개인정보취급방침을 읽었으며 이에 동의합니다.
@@ -44,7 +53,12 @@ const Inquiry = () => {
             <div className={styles.inputContent}>
               <textarea placeholder="문의"></textarea>
             </div>
-            <button type="submit">신청하기</button>
+            <button
+              type="submit"
+              className="animate__animated animate__pulse animate__slower animate__infinite"
+            >
+              신청하기
+            </button>
           </li>
         </ul>
       </div>

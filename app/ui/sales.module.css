@@ -88,7 +88,7 @@
   }
 }
 
-.emphasis {
+.sticker {
   display: flex;
   position: absolute;
   top: -120px;
@@ -117,7 +117,7 @@
   }
 }
 
-.emphasis p {
+.sticker p {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -170,7 +170,7 @@
   }
 }
 
-.chart:global(.aos-animate) .emphasis {
+.chart:global(.aos-animate) .sticker {
   animation: mark 0.4s forwards;
   animation-delay: 1.5s;
 }

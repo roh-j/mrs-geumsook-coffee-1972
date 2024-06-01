@@ -47,7 +47,7 @@ const Sales = () => {
         </div>
         <div className={styles.container}>
           <div className={styles.chart} data-aos="">
-            <div className={styles.emphasis}>
+            <div className={styles.sticker}>
               <p className="animate__animated animate__pulse animate__infinite">
                 월별 매출
                 <br />

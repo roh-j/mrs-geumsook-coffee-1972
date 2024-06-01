@@ -1,15 +1,27 @@
+"use client";
+
+import AOS from "aos";
 import Image from "next/image";
 import styles from "./promotion.module.css";
+import { useEffect } from "react";
 
 const Promotion = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
       <div className={styles.wrapper}>
         <div className={styles.container}>
-          <h3>
+          <h3 data-aos="fade-up">
             금숙씨커피 <span>오픈</span> 프로모션
           </h3>
-          <div className={styles.emphasis}>
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="300"
+            className={styles.emphasis}
+          >
             <p>처음 오픈하시는 점주님들 부담을 덜어드리겠습니다!</p>
           </div>
           <div className={styles.card}>
@@ -33,23 +45,54 @@ const Promotion = () => {
               />
             </h4>
             <ul className={styles.items}>
-              <li>
+              <li data-aos="zoom-in">
                 <div className={styles.badge}>1</div>
+                <h5>
+                  창업비{" "}
+                  <i
+                    style={{ color: "#bd2929" }}
+                    className="fa-solid fa-down-long"
+                  ></i>
+                  <br />
+                  중고집기 <span>OK</span>
+                </h5>
               </li>
-              <li>
+              <li data-aos="zoom-in">
                 <div className={styles.badge}>2</div>
+                <h5>
+                  가맹비 <span>無</span>
+                </h5>
               </li>
-              <li>
+              <li data-aos="zoom-in">
                 <div className={styles.badge}>3</div>
+                <h5>
+                  계약 이행보증금 <span>無</span>
+                </h5>
               </li>
-              <li>
+              <li data-aos="zoom-in">
                 <div className={styles.badge}>4</div>
+                <h5>
+                  인테리어 마진 <span>無</span>
+                  <p>(인테리어 개별시공 가능)</p>
+                </h5>
               </li>
-              <li>
+              <li data-aos="zoom-in">
                 <div className={styles.badge}>5</div>
+                <h6>한정 프로모션 혜택</h6>
+                <h5>
+                  1,500,000
+                  <br />
+                  상당의 집기 지원
+                </h5>
               </li>
-              <li>
+              <li data-aos="zoom-in">
                 <div className={styles.badge}>6</div>
+                <h5>
+                  로얄티 매출의 2.5%{" "}
+                  <i style={{ color: "#bd2929" }} className="fa-solid fa-x"></i>
+                  <br />
+                  <i className="fa-solid fa-arrow-right"></i> 매달 30만원
+                </h5>
               </li>
             </ul>
           </div>
@@ -57,13 +100,13 @@ const Promotion = () => {
       </div>
       <div className={styles.darkWrapper}>
         <div className={styles.darkContainer}>
-          <h3>
+          <h3 data-aos="fade-up">
             금숙씨커피1972는 점포 개설의 속도가 아닌 방향에 초점을 맞추어
             <br />
             반드시 성공하실 수 있도록{" "}
             <strong>'금숙씨 만의 성공 운영 시스템'</strong>을 도입했습니다.
           </h3>
-          <table>
+          <table data-aos="fade-up">
             <colgroup>
               <col />
               <col />
@@ -78,6 +121,13 @@ const Promotion = () => {
               <tr>
                 <td>가맹비</td>
                 <td>
+                  <div className={styles.sticker}>
+                    <p className="animate__animated animate__pulse animate__infinite">
+                      한시적
+                      <br />
+                      면제
+                    </p>
+                  </div>
                   <strong>
                     <s style={{ color: "#666" }}>6,000,000</s>
                   </strong>
@@ -87,6 +137,13 @@ const Promotion = () => {
               <tr>
                 <td>계약이행보증금</td>
                 <td>
+                  <div className={styles.sticker}>
+                    <p className="animate__animated animate__pulse animate__infinite">
+                      계약금
+                      <br />
+                      대체
+                    </p>
+                  </div>
                   <strong>
                     <s style={{ color: "#666" }}>3,000,000</s>
                   </strong>
@@ -96,6 +153,13 @@ const Promotion = () => {
               <tr>
                 <td>프로모션 혜택</td>
                 <td>
+                  <div className={styles.sticker}>
+                    <p className="animate__animated animate__pulse animate__infinite">
+                      본사
+                      <br />
+                      지원
+                    </p>
+                  </div>
                   <strong>
                     <s style={{ color: "#666" }}>1,500,000</s>
                   </strong>

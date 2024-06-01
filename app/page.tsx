@@ -22,7 +22,7 @@ const MainPage = () => {
       <Review />
       <President />
       <Promotion />
-      {/* <Inquiry /> */}
+      <Inquiry />
       <Footer />
     </>
   );
