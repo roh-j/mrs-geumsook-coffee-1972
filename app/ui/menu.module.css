@@ -176,6 +176,10 @@
   }
 }
 
+.selection ul li {
+  cursor: pointer;
+}
+
 .items {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -238,6 +242,7 @@
   border: 1px solid #846655;
   border-radius: 50rem;
   background-color: transparent;
+  cursor: pointer;
   width: 200px;
   height: 75px;
   color: #846655;
@@ -260,4 +265,13 @@
     height: 38px;
     font-size: 14px;
   }
+}
+
+.button:hover {
+  background-color: #846655;
+  color: #fff;
+}
+
+.button:disabled {
+  opacity: 0.4;
 }

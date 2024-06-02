@@ -51,9 +51,9 @@ const Header = () => {
             </li>
           </ul>
           <div className={styles.side}>
-            <a href="/" className={styles.inquiry}>
+            <Link href="#inquiry" className={styles.inquiry}>
               가맹문의
-            </a>
+            </Link>
             <button
               type="button"
               className={styles.hamburger}

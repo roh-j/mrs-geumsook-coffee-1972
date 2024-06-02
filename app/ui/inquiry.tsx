@@ -2,7 +2,7 @@ import styles from "./inquiry.module.css";
 
 const Inquiry = () => {
   return (
-    <div className={styles.wrapper}>
+    <div id="inquiry" className={styles.wrapper}>
       <div className={styles.container}>
         <h4 data-aos-offset="200" data-aos="fade-up">
           금숙씨커피와 함께 하실

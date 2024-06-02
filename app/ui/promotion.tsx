@@ -4,7 +4,7 @@ import styles from "./promotion.module.css";
 const Promotion = () => {
   return (
     <>
-      <div className={styles.wrapper}>
+      <div id="franchise" className={styles.wrapper}>
         <div className={styles.container}>
           <h3 data-aos-offset="200" data-aos="fade-up">
             금숙씨커피 <span>오픈</span> 프로모션

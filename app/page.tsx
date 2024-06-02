@@ -6,12 +6,14 @@ import Hero from "./ui/hero";
 import Inquiry from "./ui/inquiry";
 import Introduction from "./ui/introduction";
 import Menu from "./ui/menu";
+import PopupWrapper from "./ui/popup-wrapper";
 import President from "./ui/president";
 import Promotion from "./ui/promotion";
 import Review from "./ui/review";
 import Sales from "./ui/sales";
 import Script from "./ui/script";
 import Sticky from "./ui/sticky";
+import { Suspense } from "react";
 
 const MainPage = () => {
   return (
@@ -30,6 +32,9 @@ const MainPage = () => {
       <Footer />
       <Sticky />
       <Script />
+      <Suspense>
+        <PopupWrapper />
+      </Suspense>
     </>
   );
 };

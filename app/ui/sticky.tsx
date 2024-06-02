@@ -5,7 +5,7 @@ const Sticky = () => {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <div className={styles.title}>
-          창업 상담 <span>1577-0000</span>
+          창업상담 <span>1577-0000</span>
         </div>
         <div className={styles.form}>
           <div className={styles.inputPhone}>
