@@ -4,6 +4,7 @@ import "./ui/reset.css";
 import "animate.css";
 import "aos/dist/aos.css";
 import "@splidejs/react-splide/css";
+import "react-toastify/dist/ReactToastify.css";
 
 export const metadata: Metadata = {
   title: "금숙씨커피1972",

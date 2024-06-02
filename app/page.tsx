@@ -1,3 +1,4 @@
+import Common from "./ui/common";
 import Differentiation from "./ui/differentiation";
 import Feature from "./ui/feature";
 import Footer from "./ui/footer";
@@ -11,7 +12,6 @@ import President from "./ui/president";
 import Promotion from "./ui/promotion";
 import Review from "./ui/review";
 import Sales from "./ui/sales";
-import Script from "./ui/script";
 import Sticky from "./ui/sticky";
 import { Suspense } from "react";
 
@@ -31,7 +31,7 @@ const MainPage = () => {
       <Inquiry />
       <Footer />
       <Sticky />
-      <Script />
+      <Common />
       <Suspense>
         <PopupWrapper />
       </Suspense>

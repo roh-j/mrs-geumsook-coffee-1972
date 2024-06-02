@@ -2,8 +2,9 @@
 
 import styles from "./sticky.module.css";
 import { pb } from "../shared/connection";
-import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 import { useEffect, useState } from "react";
+import { useForm } from "react-hook-form";
 
 const Sticky = () => {
   const { register, handleSubmit, reset } = useForm();
@@ -17,7 +18,7 @@ const Sticky = () => {
 
   const submitInquiry = async (data: any) => {
     if (!agree) {
-      alert("개인 정보 수집을 동의해 주세요.");
+      toast.error("개인 정보 수집을 동의해 주세요.");
       return;
     }
 
@@ -36,7 +37,7 @@ const Sticky = () => {
 
     const record = await pb.collection("inquiries").create(payload);
 
-    alert("문의가 등록되었습니다.");
+    toast.success("문의가 등록되었습니다.");
     reset();
 
     setAgree(false);

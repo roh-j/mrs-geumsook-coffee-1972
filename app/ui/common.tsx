@@ -1,9 +1,10 @@
 "use client";
 
 import AOS from "aos";
+import { ToastContainer } from "react-toastify";
 import { useEffect } from "react";
 
-const Script = () => {
+const Common = () => {
   const loadPureCounter = async () => {
     // @ts-ignore
     const { default: PureCounter } = await import("@srexi/purecounterjs");
@@ -19,7 +20,7 @@ const Script = () => {
     window.history.scrollRestoration = "manual";
   }, []);
 
-  return <></>;
+  return <ToastContainer />;
 };
 
-export default Script;
+export default Common;
