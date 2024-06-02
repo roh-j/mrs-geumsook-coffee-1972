@@ -100,29 +100,35 @@ const Popup = (props: PopupProps) => {
             .filter((row: PopupsState) => row.isVisible)
             .map((row: PopupsState, index: number) => (
               <Draggable key={index} positionOffset={{ x: "-50%", y: "-50%" }}>
-                <div className={styles.container}>
-                  <Image
-                    src={`${POCKET_BASE_URL}/api/files/${row.collectionName}/${row.id}/${row.image}`}
-                    alt=""
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    style={{ width: "auto", height: "100%" }}
-                    priority
-                  />
-                  <div
-                    onClick={() => {
-                      closeToday(row.id);
-                    }}
-                  >
-                    오늘 하루동안 열지 않기
-                  </div>
-                  <div
-                    onClick={() => {
-                      closeOnce(row.id);
-                    }}
-                  >
-                    닫기
+                <div className={styles.wrapper}>
+                  <div className={styles.container}>
+                    <Image
+                      src={`${POCKET_BASE_URL}/api/files/${row.collectionName}/${row.id}/${row.image}`}
+                      alt=""
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      style={{ width: "100%", height: "auto" }}
+                      priority
+                    />
+                    <div className={styles.footer}>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          closeToday(row.id);
+                        }}
+                      >
+                        오늘 하루동안 보지 않기
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          closeOnce(row.id);
+                        }}
+                      >
+                        닫기
+                      </button>
+                    </div>
                   </div>
                 </div>
               </Draggable>

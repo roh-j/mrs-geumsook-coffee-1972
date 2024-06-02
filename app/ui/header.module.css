@@ -48,9 +48,13 @@
   text-align: center;
 }
 
-.menu li a {
-  text-decoration: none;
-  color: #000;
+.menu li span {
+  cursor: pointer;
+}
+
+.menu li span:global(.active) {
+  color: #846655 !important;
+  font-weight: bold;
 }
 
 .side {
@@ -121,7 +125,11 @@
   font-size: 22px;
 }
 
-.mobileMenu ul li a {
-  text-decoration: none;
-  color: #000;
+.mobileMenu ul li span {
+  cursor: pointer;
+}
+
+.mobileMenu ul li span:global(.active) {
+  color: #846655 !important;
+  font-weight: bold;
 }

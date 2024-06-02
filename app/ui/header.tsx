@@ -5,7 +5,10 @@ import Link from "next/link";
 import styles from "./header.module.css";
 import { useEffect, useState } from "react";
 
+type Target = "#menu" | "#franchise" | "#inquiry";
+
 const Header = () => {
+  const [target, setTarget] = useState<Target | null>(null);
   const [visibleMobileMenu, setVisibleMobileMenu] = useState<boolean>(false);
 
   const handleResize = () => {
@@ -21,6 +24,16 @@ const Header = () => {
   useEffect(() => {
     window.addEventListener("resize", handleResize);
   }, []);
+
+  useEffect(() => {
+    if (!target) {
+      window.scrollTo(0, 0);
+      return;
+    }
+
+    const el = document.querySelector(target);
+    el?.scrollIntoView();
+  }, [target]);
 
   return (
     <>
@@ -38,22 +51,48 @@ const Header = () => {
           </Link>
           <ul className={styles.menu}>
             <li>
-              <Link href="/">금숙씨1972</Link>
+              <span
+                className={`${!target ? "active" : ""}`}
+                onClick={() => {
+                  setTarget(null);
+                }}
+              >
+                금숙씨1972
+              </span>
             </li>
             <li>
-              <Link href="#menu">메뉴소개</Link>
+              <span
+                className={`${target === "#menu" ? "active" : ""}`}
+                onClick={() => {
+                  setTarget("#menu");
+                }}
+              >
+                메뉴소개
+              </span>
             </li>
             <li>
-              <Link href="#franchise">창업안내</Link>
+              <span
+                className={`${target === "#franchise" ? "active" : ""}`}
+                onClick={() => {
+                  setTarget("#franchise");
+                }}
+              >
+                창업안내
+              </span>
             </li>
             <li>
-              <Link href="#inquiry">창업문의</Link>
+              <span
+                className={`${target === "#inquiry" ? "active" : ""}`}
+                onClick={() => {
+                  setTarget("#inquiry");
+                }}
+              >
+                창업문의
+              </span>
             </li>
           </ul>
           <div className={styles.side}>
-            <Link href="#inquiry" className={styles.inquiry}>
-              가맹문의
-            </Link>
+            <span className={styles.inquiry}>가맹문의</span>
             <button
               type="button"
               className={styles.hamburger}
@@ -69,16 +108,48 @@ const Header = () => {
       >
         <ul>
           <li>
-            <Link href="/">금숙씨1972</Link>
+            <span
+              onClick={() => {
+                setTarget(null);
+                setVisibleMobileMenu(false);
+              }}
+              className={`${!target ? "active" : ""}`}
+            >
+              금숙씨1972
+            </span>
           </li>
           <li>
-            <Link href="#menu">메뉴소개</Link>
+            <span
+              onClick={() => {
+                setTarget("#menu");
+                setVisibleMobileMenu(false);
+              }}
+              className={`${target === "#menu" ? "active" : ""}`}
+            >
+              메뉴소개
+            </span>
           </li>
           <li>
-            <Link href="#franchise">창업안내</Link>
+            <span
+              onClick={() => {
+                setTarget("#franchise");
+                setVisibleMobileMenu(false);
+              }}
+              className={`${target === "#franchise" ? "active" : ""}`}
+            >
+              창업안내
+            </span>
           </li>
           <li>
-            <Link href="#inquiry">창업문의</Link>
+            <span
+              onClick={() => {
+                setTarget("#inquiry");
+                setVisibleMobileMenu(false);
+              }}
+              className={`${target === "#inquiry" ? "active" : ""}`}
+            >
+              창업문의
+            </span>
           </li>
         </ul>
       </div>

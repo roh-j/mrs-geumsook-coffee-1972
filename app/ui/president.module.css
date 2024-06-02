@@ -8,6 +8,7 @@
   height: 800px;
 
   @media (max-width: 575.98px) {
+    background-image: url("/president-background-dark.png");
     background-size: 720px auto;
     padding-top: 75px;
     padding-bottom: 25px;

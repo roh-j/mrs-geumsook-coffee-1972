@@ -15,6 +15,8 @@ const Script = () => {
     loadPureCounter();
 
     AOS.init();
+
+    window.history.scrollRestoration = "manual";
   }, []);
 
   return <></>;

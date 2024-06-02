@@ -80,6 +80,7 @@
 }
 
 .container .privacy i {
+  cursor: pointer;
   height: auto;
   font-size: 38px;
 
@@ -90,6 +91,10 @@
   @media (max-width: 575.98px) {
     font-size: 24px;
   }
+}
+
+.container .privacy span {
+  cursor: pointer;
 }
 
 .container .privacy button {
@@ -194,6 +199,19 @@
   }
 }
 
+.error {
+  margin-bottom: 15px;
+  color: #bd2929;
+
+  @media (max-width: 575.98px) {
+    margin-bottom: 11px;
+  }
+
+  @media (max-width: 575.98px) {
+    margin-bottom: 8px;
+  }
+}
+
 .inputPhone {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -211,6 +229,15 @@
 
 .inputLocation {
   display: flex;
+  margin-bottom: 15px;
+
+  @media (max-width: 575.98px) {
+    margin-bottom: 11px;
+  }
+
+  @media (max-width: 575.98px) {
+    margin-bottom: 8px;
+  }
 }
 
 .inputSource {
@@ -228,6 +255,15 @@
 
 .inputContent {
   display: flex;
+  margin-bottom: 15px;
+
+  @media (max-width: 575.98px) {
+    margin-bottom: 11px;
+  }
+
+  @media (max-width: 575.98px) {
+    margin-bottom: 8px;
+  }
 }
 
 .form textarea {
@@ -254,9 +290,10 @@
 }
 
 .form button[type="submit"] {
-  margin-top: 25px;
+  margin-top: 10px;
   border: none;
   background-color: #846655;
+  cursor: pointer;
   padding: 16px 30px;
   width: 100%;
   color: #fff;
