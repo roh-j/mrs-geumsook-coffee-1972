@@ -1,4 +1,5 @@
 export type MenuCategory =
+  | "ALL"
   | "1L_LARGE_CAPACITY"
   | "COFFEE"
   | "COLD_BREW"
@@ -15,6 +16,7 @@ export type MenuCategory =
   | "DESSERT";
 
 const MENU_CATEGORY = [
+  { name: "전체 메뉴", category: "ALL" },
   { name: "1L 대용량", category: "1L_LARGE_CAPACITY" },
   { name: "커피", category: "COFFEE" },
   { name: "콜드브루", category: "COLD_BREW" },

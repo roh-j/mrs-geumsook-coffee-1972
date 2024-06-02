@@ -45,22 +45,66 @@ const Sales = () => {
             <div className={styles.strong}>104,313,420원</div>
             <ul>
               <li>
-                <span className={styles.amount}>71,417,580원</span>
+                <span className={styles.amount}>
+                  <span
+                    className="purecounter"
+                    data-purecounter-start="0"
+                    data-purecounter-end="71417580"
+                    data-purecounter-once="false"
+                    data-purecounter-separator=","
+                  >
+                    0
+                  </span>
+                  원
+                </span>
                 <p className={styles.bar}></p>
                 <p className={styles.label}>23'12월</p>
               </li>
               <li>
-                <span className={styles.amount}>73,284,520원</span>
+                <span className={styles.amount}>
+                  <span
+                    className="purecounter"
+                    data-purecounter-start="0"
+                    data-purecounter-end="73284520"
+                    data-purecounter-once="false"
+                    data-purecounter-separator=","
+                  >
+                    0
+                  </span>
+                  원
+                </span>
                 <p className={styles.bar}></p>
                 <p className={styles.label}>24'1월</p>
               </li>
               <li>
-                <span className={styles.amount}>90,311,510원</span>
+                <span className={styles.amount}>
+                  <span
+                    className="purecounter"
+                    data-purecounter-start="0"
+                    data-purecounter-end="90311510"
+                    data-purecounter-once="false"
+                    data-purecounter-separator=","
+                  >
+                    0
+                  </span>
+                  원
+                </span>
                 <p className={styles.bar}></p>
                 <p className={styles.label}>2월</p>
               </li>
               <li>
-                <span className={styles.amount}>94,888,490원</span>
+                <span className={styles.amount}>
+                  <span
+                    className="purecounter"
+                    data-purecounter-start="0"
+                    data-purecounter-end="94888490"
+                    data-purecounter-once="false"
+                    data-purecounter-separator=","
+                  >
+                    0
+                  </span>
+                  원
+                </span>
                 <p className={styles.bar}></p>
                 <p className={styles.label}>3월</p>
               </li>

@@ -7,7 +7,11 @@ const Promotion = () => {
       <div id="franchise" className={styles.wrapper}>
         <div className={styles.container}>
           <h3 data-aos-offset="200" data-aos="fade-up">
-            금숙씨커피 <span>오픈</span> 프로모션
+            금숙씨커피{" "}
+            <span className="animate__animated animate__flash animate__slow animate__infinite">
+              오픈
+            </span>{" "}
+            프로모션
           </h3>
           <div
             data-aos-offset="200"

@@ -6,7 +6,7 @@ import { MENU_CATEGORY, MENU_ITEMS, MenuCategory } from "../constants/menu";
 import { useState } from "react";
 
 const Menu = () => {
-  const [category, setCategory] = useState<MenuCategory>("1L_LARGE_CAPACITY");
+  const [category, setCategory] = useState<MenuCategory>("ALL");
   const [pagination, setPagination] = useState<number>(8);
 
   const handleCategory = (newCategory: MenuCategory) => {
@@ -101,7 +101,9 @@ const Menu = () => {
           </ul>
         </div>
         <ul className={styles.items}>
-          {MENU_ITEMS.filter((row) => row.category === category)
+          {MENU_ITEMS.filter(
+            (row) => category === "ALL" || row.category === category
+          )
             .slice(0, pagination)
             .map((row, index) => (
               <li key={index} data-aos-offset="200" data-aos="fade-up">
@@ -127,8 +129,9 @@ const Menu = () => {
               handlePagination(pagination + 8);
             }}
             disabled={
-              MENU_ITEMS.filter((row) => row.category === category).length <=
-              pagination
+              MENU_ITEMS.filter(
+                (row) => category === "ALL" || row.category === category
+              ).length <= pagination
             }
           >
             + MORE

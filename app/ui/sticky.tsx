@@ -59,7 +59,10 @@ const Sticky = () => {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <div className={styles.title}>
-          창업상담 <span>1577-0000</span>
+          창업상담{" "}
+          <span className="animate__animated animate__flash animate__slower animate__infinite">
+            1577-0000
+          </span>
         </div>
         <form
           onSubmit={handleSubmit((data) => {
@@ -105,7 +108,12 @@ const Sticky = () => {
             </span>
           </div>
           <div className={styles.submit}>
-            <button type="submit">신청하기</button>
+            <button
+              type="submit"
+              className="animate__animated animate__pulse animate__slower animate__infinite"
+            >
+              신청하기
+            </button>
           </div>
         </form>
       </div>
