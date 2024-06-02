@@ -109,12 +109,14 @@ const Popup = (props: PopupProps) => {
                       height={0}
                       sizes="100vw"
                       style={{ width: "100%", height: "auto" }}
-                      priority
                     />
                     <div className={styles.footer}>
                       <button
                         type="button"
                         onClick={() => {
+                          closeToday(row.id);
+                        }}
+                        onTouchEnd={() => {
                           closeToday(row.id);
                         }}
                       >
@@ -123,6 +125,9 @@ const Popup = (props: PopupProps) => {
                       <button
                         type="button"
                         onClick={() => {
+                          closeOnce(row.id);
+                        }}
+                        onTouchEnd={() => {
                           closeOnce(row.id);
                         }}
                       >

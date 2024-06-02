@@ -92,7 +92,14 @@ const Header = () => {
             </li>
           </ul>
           <div className={styles.side}>
-            <span className={styles.inquiry}>가맹문의</span>
+            <span
+              className={styles.inquiry}
+              onClick={() => {
+                setTarget("#inquiry");
+              }}
+            >
+              가맹문의
+            </span>
             <button
               type="button"
               className={styles.hamburger}
