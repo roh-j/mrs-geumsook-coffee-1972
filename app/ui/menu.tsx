@@ -57,7 +57,7 @@ const Menu = () => {
                 sizes="100vw"
               />
             </div>
-            <h5>석류아이스티</h5>
+            <h5>석류 아이스티</h5>
           </li>
           <li data-aos-offset="200" data-aos="fade-up">
             <div

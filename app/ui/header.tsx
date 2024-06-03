@@ -7,8 +7,10 @@ import { useEffect, useState } from "react";
 
 type Target = "#menu" | "#franchise" | "#inquiry";
 
+const TARGET_EL = ["#menu", "#franchise", "#inquiry"];
+
 const Header = () => {
-  const [target, setTarget] = useState<Target | null>(null);
+  const [current, setCurrent] = useState<Target | null>(null);
   const [visibleMobileMenu, setVisibleMobileMenu] = useState<boolean>(false);
 
   const handleResize = () => {
@@ -17,15 +19,29 @@ const Header = () => {
     }
   };
 
+  const handleScroll = () => {
+    const scrollTop =
+      document.documentElement.scrollTop || document.body.scrollTop;
+
+    for (let i = TARGET_EL.length - 1; i >= 0; i--) {
+      const el: HTMLElement | null = document.querySelector(TARGET_EL[i]);
+
+      if (el && scrollTop >= el.offsetTop) {
+        setCurrent(TARGET_EL[i] as Target);
+        return;
+      }
+    }
+
+    setCurrent(null);
+  };
+
   const handleVisibleMobileMenu = () => {
     setVisibleMobileMenu(!visibleMobileMenu);
   };
 
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-  }, []);
+  const handleSection = (target: Target | null) => {
+    setCurrent(target);
 
-  useEffect(() => {
     if (!target) {
       window.scrollTo(0, 0);
       return;
@@ -33,7 +49,12 @@ const Header = () => {
 
     const el = document.querySelector(target);
     el?.scrollIntoView();
-  }, [target]);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
@@ -52,9 +73,9 @@ const Header = () => {
           <ul className={styles.menu}>
             <li>
               <span
-                className={`${!target ? "active" : ""}`}
+                className={`${!current ? "active" : ""}`}
                 onClick={() => {
-                  setTarget(null);
+                  handleSection(null);
                 }}
               >
                 금숙씨1972
@@ -62,9 +83,9 @@ const Header = () => {
             </li>
             <li>
               <span
-                className={`${target === "#menu" ? "active" : ""}`}
+                className={`${current === "#menu" ? "active" : ""}`}
                 onClick={() => {
-                  setTarget("#menu");
+                  handleSection("#menu");
                 }}
               >
                 메뉴소개
@@ -72,9 +93,9 @@ const Header = () => {
             </li>
             <li>
               <span
-                className={`${target === "#franchise" ? "active" : ""}`}
+                className={`${current === "#franchise" ? "active" : ""}`}
                 onClick={() => {
-                  setTarget("#franchise");
+                  handleSection("#franchise");
                 }}
               >
                 창업안내
@@ -82,9 +103,9 @@ const Header = () => {
             </li>
             <li>
               <span
-                className={`${target === "#inquiry" ? "active" : ""}`}
+                className={`${current === "#inquiry" ? "active" : ""}`}
                 onClick={() => {
-                  setTarget("#inquiry");
+                  handleSection("#inquiry");
                 }}
               >
                 창업문의
@@ -95,7 +116,7 @@ const Header = () => {
             <span
               className={`${styles.inquiry} animate__animated animate__pulse animate__slower animate__infinite`}
               onClick={() => {
-                setTarget("#inquiry");
+                handleSection("#inquiry");
               }}
             >
               가맹문의
@@ -117,10 +138,10 @@ const Header = () => {
           <li>
             <span
               onClick={() => {
-                setTarget(null);
+                handleSection(null);
                 setVisibleMobileMenu(false);
               }}
-              className={`${!target ? "active" : ""}`}
+              className={`${!current ? "active" : ""}`}
             >
               금숙씨1972
             </span>
@@ -128,10 +149,10 @@ const Header = () => {
           <li>
             <span
               onClick={() => {
-                setTarget("#menu");
+                handleSection("#menu");
                 setVisibleMobileMenu(false);
               }}
-              className={`${target === "#menu" ? "active" : ""}`}
+              className={`${current === "#menu" ? "active" : ""}`}
             >
               메뉴소개
             </span>
@@ -139,10 +160,10 @@ const Header = () => {
           <li>
             <span
               onClick={() => {
-                setTarget("#franchise");
+                handleSection("#franchise");
                 setVisibleMobileMenu(false);
               }}
-              className={`${target === "#franchise" ? "active" : ""}`}
+              className={`${current === "#franchise" ? "active" : ""}`}
             >
               창업안내
             </span>
@@ -150,10 +171,10 @@ const Header = () => {
           <li>
             <span
               onClick={() => {
-                setTarget("#inquiry");
+                handleSection("#inquiry");
                 setVisibleMobileMenu(false);
               }}
-              className={`${target === "#inquiry" ? "active" : ""}`}
+              className={`${current === "#inquiry" ? "active" : ""}`}
             >
               창업문의
             </span>
