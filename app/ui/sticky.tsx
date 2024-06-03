@@ -18,7 +18,7 @@ const Sticky = () => {
 
   const submitInquiry = async (data: any) => {
     if (!agree) {
-      toast.error("개인 정보 수집을 동의해 주세요.");
+      toast.error("개인정보 수집에 동의해야 합니다.");
       return;
     }
 

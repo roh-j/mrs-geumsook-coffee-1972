@@ -23,7 +23,7 @@ const Inquiry = () => {
 
   const submitInquiry = async (data: any) => {
     if (!agree) {
-      toast.error("개인 정보 수집을 동의해 주세요.");
+      toast.error("개인정보 수집에 동의해야 합니다.");
       return;
     }
 
@@ -32,7 +32,7 @@ const Inquiry = () => {
       phone: `${data.phone1}-${data.phone2}-${data.phone3}`,
       location: data.location,
       source: data.source,
-      content: data.content,
+      content: data.content.replace(/\n/g, "<br />"),
     };
 
     const record = await pb.collection("inquiries").create(payload);
@@ -53,7 +53,7 @@ const Inquiry = () => {
           <h3 data-aos-offset="200" data-aos="zoom-in" data-aos-delay="300">
             <strong>가족점</strong> 모집
           </h3>
-          <div className={styles.privacy}>
+          <div className={styles.privacy} data-aos="fade-up">
             {agree ? (
               <i
                 className="fa-solid fa-circle-check"
@@ -76,7 +76,7 @@ const Inquiry = () => {
                 handleAgree(!agree);
               }}
             >
-              개인정보취급방침을 읽었으며 이에 동의합니다.
+              개인정보처리방침을 읽었으며 이에 동의합니다.
             </span>
             <button
               type="button"
@@ -87,7 +87,7 @@ const Inquiry = () => {
               전문보기
             </button>
           </div>
-          <h5>
+          <h5 data-aos="fade-up">
             상담자 정보 <strong>* 필수 입력 항목</strong>
           </h5>
           <form
@@ -172,7 +172,7 @@ const Inquiry = () => {
               </button>
             </div>
             <div className={styles.termsContent}>
-              <h3>개인정보 처리방침</h3>
+              <h3>개인정보처리방침</h3>
               <p>
                 <strong>개인정보 수집/이용 목적:</strong> 창업 상담, 회사 소식
                 등의 다양한 정보 제공

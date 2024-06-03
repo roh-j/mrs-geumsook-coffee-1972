@@ -93,7 +93,7 @@ const Header = () => {
           </ul>
           <div className={styles.side}>
             <span
-              className={styles.inquiry}
+              className={`${styles.inquiry} animate__animated animate__pulse animate__slower animate__infinite`}
               onClick={() => {
                 setTarget("#inquiry");
               }}
