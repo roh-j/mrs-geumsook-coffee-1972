@@ -26,7 +26,8 @@ const Header = () => {
     for (let i = TARGET_EL.length - 1; i >= 0; i--) {
       const el: HTMLElement | null = document.querySelector(TARGET_EL[i]);
 
-      if (el && scrollTop >= el.offsetTop) {
+      // 섹션 판단에 여유를 주기 위한 보정값 추가 (20)
+      if (el && scrollTop >= el.offsetTop - 20) {
         setCurrent(TARGET_EL[i] as Target);
         return;
       }
