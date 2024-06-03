@@ -2,10 +2,14 @@
   display: flex;
   justify-content: center;
   background-image: url("/president-background.png");
-  background-position: bottom right;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: 1920px auto;
   height: 800px;
+
+  @media (max-width: 1399.98px) {
+    background-position: bottom right;
+  }
 
   @media (max-width: 575.98px) {
     background-image: url("/president-background-dark.png");
