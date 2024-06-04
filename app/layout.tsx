@@ -9,6 +9,21 @@ import "react-toastify/dist/ReactToastify.css";
 export const metadata: Metadata = {
   title: "금숙씨커피1972",
   description: "대한민국 엄마의 자존심 금숙씨가 만들면 다 맛있습니다.",
+  openGraph: {
+    title: "금숙씨커피1972",
+    description: "대한민국 엄마의 자존심 금숙씨가 만들면 다 맛있습니다.",
+    url: "https://gsc1972.com/",
+    siteName: "금숙씨커피1972",
+    images: [
+      {
+        url: "https://gsc1972.com/og.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "ko_KR",
+    type: "website",
+  },
 };
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
