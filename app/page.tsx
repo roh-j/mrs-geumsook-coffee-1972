@@ -32,7 +32,7 @@ const MainPage = () => {
       <Footer />
       <Sticky />
       <Common />
-      <Suspense>
+      <Suspense fallback={<div></div>}>
         <PopupWrapper />
       </Suspense>
     </>
