@@ -10,13 +10,14 @@ const Sales = () => {
           data-aos="fade-up"
         >
           <h4>
-            24년 5월 달 일일매출{" "}
+            24년 6월 달 일일 매출{" "}
             <strong>
               신기록{" "}
               <span
                 className="purecounter"
+                data-purecounter-duration="1"
                 data-purecounter-start="0"
-                data-purecounter-end="6842000"
+                data-purecounter-end="8617850"
                 data-purecounter-once="false"
                 data-purecounter-separator=","
               >
@@ -29,7 +30,7 @@ const Sales = () => {
             금숙씨커피본점 <strong>8평 매장</strong>
             <br />
             <strong className="animate__animated animate__flash animate__slower animate__infinite">
-              월 매출 1억원 돌파!!!
+              월 매출 1억4천만원 돌파!!!
             </strong>
           </h3>
         </div>
@@ -37,33 +38,20 @@ const Sales = () => {
           <div className={styles.chart} data-aos-offset="200" data-aos="">
             <div className={styles.sticker}>
               <p className="animate__animated animate__pulse animate__infinite">
-                월별 매출
+                아메리카노
                 <br />
-                증가율
+                4,927잔
+                <br />
+                판매
               </p>
             </div>
-            <div className={styles.strong}>104,313,420원</div>
+            <div className={styles.strong}>144,966,770원</div>
             <ul>
               <li>
                 <span className={styles.amount}>
                   <span
                     className="purecounter"
-                    data-purecounter-start="0"
-                    data-purecounter-end="71417580"
-                    data-purecounter-once="false"
-                    data-purecounter-separator=","
-                  >
-                    0
-                  </span>
-                  원
-                </span>
-                <p className={styles.bar}></p>
-                <p className={styles.label}>23'12월</p>
-              </li>
-              <li>
-                <span className={styles.amount}>
-                  <span
-                    className="purecounter"
+                    data-purecounter-duration="1"
                     data-purecounter-start="0"
                     data-purecounter-end="73284520"
                     data-purecounter-once="false"
@@ -80,6 +68,7 @@ const Sales = () => {
                 <span className={styles.amount}>
                   <span
                     className="purecounter"
+                    data-purecounter-duration="1.1"
                     data-purecounter-start="0"
                     data-purecounter-end="90311510"
                     data-purecounter-once="false"
@@ -96,6 +85,7 @@ const Sales = () => {
                 <span className={styles.amount}>
                   <span
                     className="purecounter"
+                    data-purecounter-duration="1.2"
                     data-purecounter-start="0"
                     data-purecounter-end="94888490"
                     data-purecounter-once="false"
@@ -109,8 +99,25 @@ const Sales = () => {
                 <p className={styles.label}>3월</p>
               </li>
               <li>
-                <p className={styles.bar} style={{ opacity: 0.5 }}></p>
+                <span className={styles.amount}>
+                  <span
+                    className="purecounter"
+                    data-purecounter-duration="1.3"
+                    data-purecounter-start="0"
+                    data-purecounter-end="104313420"
+                    data-purecounter-once="false"
+                    data-purecounter-separator=","
+                  >
+                    0
+                  </span>
+                  원
+                </span>
+                <p className={styles.bar}></p>
                 <p className={styles.label}>4월</p>
+              </li>
+              <li>
+                <p className={styles.bar} style={{ opacity: 0.5 }}></p>
+                <p className={styles.label}>5월</p>
               </li>
             </ul>
           </div>
@@ -120,13 +127,14 @@ const Sales = () => {
             data-aos="fade-up"
           >
             <h4>
-              24년 5월 달 일일매출{" "}
+              24년 6월 달 일일 매출{" "}
               <strong>
                 신기록{" "}
                 <span
                   className="purecounter"
+                  data-purecounter-duration="1"
                   data-purecounter-start="0"
-                  data-purecounter-end="6842000"
+                  data-purecounter-end="8617850"
                   data-purecounter-once="false"
                   data-purecounter-separator=","
                 >
@@ -139,14 +147,18 @@ const Sales = () => {
               금숙씨커피본점 <strong>8평 매장</strong>
               <br />
               <strong className="animate__animated animate__flash animate__slower animate__infinite">
-                월 매출 1억원 돌파!!!
+                월 매출 1억4천만원 돌파!!!
               </strong>
             </h3>
             <p>
-              8평 매장에서 말도 안되는 매출을 만들었습니다.
+              8평의 기적이라고 들어보셨습니까?
+              <br />
+              <br />
+              + 금숙씨커피는 비수기가 없습니다. 365일 내내 성수기
               <br />
               + 꾸준하고, 안전하게 매출이 성장하는 브랜드
-              <br />+ 수원본점 임대료 70만원
+              <br />+ 디저트와 음료의 만남! <u>평균 객단가 15,929원</u>
+              <br />+ 수원본점 매장 임대료 <u>8평 70만원</u>
             </p>
           </div>
         </div>
@@ -156,10 +168,14 @@ const Sales = () => {
           data-aos="fade-up"
         >
           <p>
-            8평 매장에서 말도 안되는 매출을 만들었습니다.
+            8평의 기적이라고 들어보셨습니까?
+            <br />
+            <br />
+            + 금숙씨커피는 비수기가 없습니다. 365일 내내 성수기
             <br />
             + 꾸준하고, 안전하게 매출이 성장하는 브랜드
-            <br />+ 수원본점 임대료 70만원
+            <br />+ 디저트와 음료의 만남! <u>평균 객단가 15,929원</u>
+            <br />+ 수원본점 매장 임대료 <u>8평 70만원</u>
           </p>
         </div>
       </div>

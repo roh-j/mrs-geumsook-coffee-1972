@@ -17,13 +17,13 @@ const Sticky = () => {
   };
 
   const submitInquiry = async (data: any) => {
-    if (!agree) {
-      toast.error("개인정보 수집에 동의해야 합니다.");
+    if (!data.phone1 || !data.phone2 || !data.phone3) {
+      toast.error("전화번호를 입력해 주세요.");
       return;
     }
 
-    if (!data.phone1 || !data.phone2 || !data.phone3) {
-      alert("전화번호를 입력해 주세요.");
+    if (!agree) {
+      toast.error("개인정보 수집에 동의해야 합니다.");
       return;
     }
 
@@ -62,7 +62,7 @@ const Sticky = () => {
         <div className={styles.title}>
           창업상담{" "}
           <span className="animate__animated animate__flash animate__slower animate__infinite">
-            1577-0000
+            1661-3070
           </span>
         </div>
         <form
