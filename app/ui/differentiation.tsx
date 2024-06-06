@@ -38,7 +38,7 @@ const Differentiation = () => {
         </h4>
         <p data-aos-offset="200" data-aos="fade-up" data-aos-delay="300">
           <strong>카</strong>페에서 <strong>식사</strong>를 한다면,{" "}
-          <strong>카</strong>페에서 <strong>냉면</strong>을 판다면,
+          <strong>카</strong>페에서 <strong>냉면</strong>을 판다면,{" "}
           <strong>카</strong>페에서 <strong>찐옥수수</strong>를 판다면,
         </p>
         <p data-aos-offset="200" data-aos="zoom-in" data-aos-delay="500">
