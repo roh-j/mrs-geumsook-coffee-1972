@@ -17,7 +17,7 @@ const Sales = () => {
                 className="purecounter"
                 data-purecounter-duration="1"
                 data-purecounter-start="0"
-                data-purecounter-end="8617850"
+                data-purecounter-end="10259100"
                 data-purecounter-once="false"
                 data-purecounter-separator=","
               >
@@ -134,7 +134,7 @@ const Sales = () => {
                   className="purecounter"
                   data-purecounter-duration="1"
                   data-purecounter-start="0"
-                  data-purecounter-end="8617850"
+                  data-purecounter-end="10259100"
                   data-purecounter-once="false"
                   data-purecounter-separator=","
                 >
@@ -151,7 +151,7 @@ const Sales = () => {
               </strong>
             </h3>
             <p>
-              8평의 기적이라고 들어보셨습니까?
+              8평의 기적 수원의 전설이 되다.
               <br />
               <br />
               + 금숙씨커피는 비수기가 없습니다. 365일 내내 성수기
@@ -168,7 +168,7 @@ const Sales = () => {
           data-aos="fade-up"
         >
           <p>
-            8평의 기적이라고 들어보셨습니까?
+            8평의 기적 수원의 전설이 되다.
             <br />
             <br />
             + 금숙씨커피는 비수기가 없습니다. 365일 내내 성수기

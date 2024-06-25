@@ -127,7 +127,11 @@ const Header = () => {
               className={styles.hamburger}
               onClick={handleVisibleMobileMenu}
             >
-              <i className="fa-solid fa-bars"></i>
+              {visibleMobileMenu ? (
+                <i className="fa-solid fa-x"></i>
+              ) : (
+                <i className="fa-solid fa-bars"></i>
+              )}
             </button>
           </div>
         </div>

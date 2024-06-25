@@ -13,7 +13,7 @@ const Feature = () => {
           >
             <div className={styles.thumbnail}>
               <Image
-                src="/feature-placeholder.png"
+                src="/feature-1.png"
                 alt=""
                 width={0}
                 height={0}
@@ -40,7 +40,7 @@ const Feature = () => {
           >
             <div className={styles.thumbnail}>
               <Image
-                src="/feature-placeholder.png"
+                src="/feature-2.png"
                 alt=""
                 width={0}
                 height={0}
@@ -72,7 +72,7 @@ const Feature = () => {
           >
             <div className={styles.thumbnail}>
               <Image
-                src="/feature-placeholder.png"
+                src="/feature-3.png"
                 alt=""
                 width={0}
                 height={0}
