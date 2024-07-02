@@ -31,7 +31,7 @@ const Menu = () => {
             >
               BEST
             </div>
-            <div style={{ width: "100%", aspectRatio: 1 }}>
+            <div style={{ width: "100%", aspectRatio: 1, minHeight: 0 }}>
               <Image
                 src="/menu-best-americano.png"
                 alt=""
@@ -48,7 +48,7 @@ const Menu = () => {
             >
               BEST
             </div>
-            <div style={{ width: "100%", aspectRatio: 1 }}>
+            <div style={{ width: "100%", aspectRatio: 1, minHeight: 0 }}>
               <Image
                 src="/menu-best-pomegranate-iced-tea.png"
                 alt=""
@@ -65,7 +65,7 @@ const Menu = () => {
             >
               BEST
             </div>
-            <div style={{ width: "100%", aspectRatio: 1 }}>
+            <div style={{ width: "100%", aspectRatio: 1, minHeight: 0 }}>
               <Image
                 src="/menu-best-chamomile-tea.png"
                 alt=""
@@ -107,7 +107,7 @@ const Menu = () => {
             .slice(0, pagination)
             .map((row, index) => (
               <li key={index} data-aos-offset="200" data-aos="fade-up">
-                <div style={{ width: "100%", aspectRatio: 1 }}>
+                <div style={{ width: "100%", aspectRatio: 1, minHeight: 0 }}>
                   <Image
                     key={row.src}
                     src={row.src}
@@ -126,7 +126,7 @@ const Menu = () => {
             type="button"
             className={styles.button}
             onClick={() => {
-              handlePagination(pagination + 8);
+              handlePagination(pagination + 16);
             }}
             disabled={
               MENU_ITEMS.filter(

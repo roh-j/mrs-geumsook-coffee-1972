@@ -17,7 +17,7 @@ const Sales = () => {
                 className="purecounter"
                 data-purecounter-duration="1"
                 data-purecounter-start="0"
-                data-purecounter-end="10259100"
+                data-purecounter-end="11244660"
                 data-purecounter-once="false"
                 data-purecounter-separator=","
               >
@@ -30,7 +30,7 @@ const Sales = () => {
             금숙씨커피본점 <strong>8평 매장</strong>
             <br />
             <strong className="animate__animated animate__flash animate__slower animate__infinite">
-              월 매출 1억4천만원 돌파!!!
+              월 매출 2억원 달성!!!
             </strong>
           </h3>
         </div>
@@ -45,30 +45,13 @@ const Sales = () => {
                 판매
               </p>
             </div>
-            <div className={styles.strong}>144,966,770원</div>
+            <div className={styles.strong}>200,700,770원</div>
             <ul>
               <li>
                 <span className={styles.amount}>
                   <span
                     className="purecounter"
                     data-purecounter-duration="1"
-                    data-purecounter-start="0"
-                    data-purecounter-end="73284520"
-                    data-purecounter-once="false"
-                    data-purecounter-separator=","
-                  >
-                    0
-                  </span>
-                  원
-                </span>
-                <p className={styles.bar}></p>
-                <p className={styles.label}>24'1월</p>
-              </li>
-              <li>
-                <span className={styles.amount}>
-                  <span
-                    className="purecounter"
-                    data-purecounter-duration="1.1"
                     data-purecounter-start="0"
                     data-purecounter-end="90311510"
                     data-purecounter-once="false"
@@ -79,13 +62,13 @@ const Sales = () => {
                   원
                 </span>
                 <p className={styles.bar}></p>
-                <p className={styles.label}>2월</p>
+                <p className={styles.label}>24'2월</p>
               </li>
               <li>
                 <span className={styles.amount}>
                   <span
                     className="purecounter"
-                    data-purecounter-duration="1.2"
+                    data-purecounter-duration="1.1"
                     data-purecounter-start="0"
                     data-purecounter-end="94888490"
                     data-purecounter-once="false"
@@ -102,7 +85,7 @@ const Sales = () => {
                 <span className={styles.amount}>
                   <span
                     className="purecounter"
-                    data-purecounter-duration="1.3"
+                    data-purecounter-duration="1.2"
                     data-purecounter-start="0"
                     data-purecounter-end="104313420"
                     data-purecounter-once="false"
@@ -116,8 +99,25 @@ const Sales = () => {
                 <p className={styles.label}>4월</p>
               </li>
               <li>
-                <p className={styles.bar} style={{ opacity: 0.5 }}></p>
+                <span className={styles.amount}>
+                  <span
+                    className="purecounter"
+                    data-purecounter-duration="1.3"
+                    data-purecounter-start="0"
+                    data-purecounter-end="144966770"
+                    data-purecounter-once="false"
+                    data-purecounter-separator=","
+                  >
+                    0
+                  </span>
+                  원
+                </span>
+                <p className={styles.bar}></p>
                 <p className={styles.label}>5월</p>
+              </li>
+              <li>
+                <p className={styles.bar} style={{ opacity: 0.5 }}></p>
+                <p className={styles.label}>6월</p>
               </li>
             </ul>
           </div>
@@ -134,7 +134,7 @@ const Sales = () => {
                   className="purecounter"
                   data-purecounter-duration="1"
                   data-purecounter-start="0"
-                  data-purecounter-end="10259100"
+                  data-purecounter-end="11244660"
                   data-purecounter-once="false"
                   data-purecounter-separator=","
                 >
@@ -147,7 +147,7 @@ const Sales = () => {
               금숙씨커피본점 <strong>8평 매장</strong>
               <br />
               <strong className="animate__animated animate__flash animate__slower animate__infinite">
-                월 매출 1억4천만원 돌파!!!
+                월 매출 2억원 달성!!!
               </strong>
             </h3>
             <p>

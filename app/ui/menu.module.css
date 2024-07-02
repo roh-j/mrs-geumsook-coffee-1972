@@ -272,6 +272,12 @@
   color: #fff;
 }
 
+.button[disabled]:hover {
+  background-color: transparent;
+  color: #846655;
+}
+
 .button:disabled {
   opacity: 0.4;
+  cursor: not-allowed;
 }
