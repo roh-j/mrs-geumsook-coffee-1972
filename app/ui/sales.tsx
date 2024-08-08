@@ -10,14 +10,14 @@ const Sales = () => {
           data-aos="fade-up"
         >
           <h4>
-            24년 6월 달 일일 매출{" "}
+            24년 7월 달 일일 매출{" "}
             <strong>
               신기록{" "}
               <span
                 className="purecounter"
                 data-purecounter-duration="1"
                 data-purecounter-start="0"
-                data-purecounter-end="11244660"
+                data-purecounter-end="12322180"
                 data-purecounter-once="false"
                 data-purecounter-separator=","
               >
@@ -40,35 +40,18 @@ const Sales = () => {
               <p className="animate__animated animate__pulse animate__infinite">
                 아메리카노
                 <br />
-                4,927잔
+                11,739잔
                 <br />
                 판매
               </p>
             </div>
-            <div className={styles.strong}>200,700,770원</div>
+            <div className={styles.strong}>230,435,710원</div>
             <ul>
               <li>
                 <span className={styles.amount}>
                   <span
                     className="purecounter"
                     data-purecounter-duration="1"
-                    data-purecounter-start="0"
-                    data-purecounter-end="90311510"
-                    data-purecounter-once="false"
-                    data-purecounter-separator=","
-                  >
-                    0
-                  </span>
-                  원
-                </span>
-                <p className={styles.bar}></p>
-                <p className={styles.label}>24'2월</p>
-              </li>
-              <li>
-                <span className={styles.amount}>
-                  <span
-                    className="purecounter"
-                    data-purecounter-duration="1.1"
                     data-purecounter-start="0"
                     data-purecounter-end="94888490"
                     data-purecounter-once="false"
@@ -79,13 +62,13 @@ const Sales = () => {
                   원
                 </span>
                 <p className={styles.bar}></p>
-                <p className={styles.label}>3월</p>
+                <p className={styles.label}>24'3월</p>
               </li>
               <li>
                 <span className={styles.amount}>
                   <span
                     className="purecounter"
-                    data-purecounter-duration="1.2"
+                    data-purecounter-duration="1.1"
                     data-purecounter-start="0"
                     data-purecounter-end="104313420"
                     data-purecounter-once="false"
@@ -102,7 +85,7 @@ const Sales = () => {
                 <span className={styles.amount}>
                   <span
                     className="purecounter"
-                    data-purecounter-duration="1.3"
+                    data-purecounter-duration="1.2"
                     data-purecounter-start="0"
                     data-purecounter-end="144966770"
                     data-purecounter-once="false"
@@ -116,8 +99,25 @@ const Sales = () => {
                 <p className={styles.label}>5월</p>
               </li>
               <li>
-                <p className={styles.bar} style={{ opacity: 0.5 }}></p>
+                <span className={styles.amount}>
+                  <span
+                    className="purecounter"
+                    data-purecounter-duration="1.3"
+                    data-purecounter-start="0"
+                    data-purecounter-end="200700770"
+                    data-purecounter-once="false"
+                    data-purecounter-separator=","
+                  >
+                    0
+                  </span>
+                  원
+                </span>
+                <p className={styles.bar}></p>
                 <p className={styles.label}>6월</p>
+              </li>
+              <li>
+                <p className={styles.bar} style={{ opacity: 0.5 }}></p>
+                <p className={styles.label}>7월</p>
               </li>
             </ul>
           </div>
@@ -127,14 +127,14 @@ const Sales = () => {
             data-aos="fade-up"
           >
             <h4>
-              24년 6월 달 일일 매출{" "}
+              24년 7월 달 일일 매출{" "}
               <strong>
                 신기록{" "}
                 <span
                   className="purecounter"
                   data-purecounter-duration="1"
                   data-purecounter-start="0"
-                  data-purecounter-end="11244660"
+                  data-purecounter-end="12322180"
                   data-purecounter-once="false"
                   data-purecounter-separator=","
                 >

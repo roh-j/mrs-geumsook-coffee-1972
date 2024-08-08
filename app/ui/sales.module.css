@@ -260,22 +260,22 @@
 
 .chart:global(.aos-animate) li:nth-child(1) .bar {
   transition-delay: 0.2s;
-  height: 44.99%;
+  height: 41.17%;
 }
 
 .chart:global(.aos-animate) li:nth-child(2) .bar {
   transition-delay: 0.4s;
-  height: 47.27%;
+  height: 45.26%;
 }
 
 .chart:global(.aos-animate) li:nth-child(3) .bar {
   transition-delay: 0.6s;
-  height: 51.97%;
+  height: 62.9%;
 }
 
 .chart:global(.aos-animate) li:nth-child(4) .bar {
   transition-delay: 0.8s;
-  height: 72.23%;
+  height: 87.09%;
 }
 
 .chart:global(.aos-animate) li:nth-child(5) .bar {
