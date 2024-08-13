@@ -1,6 +1,6 @@
 ## Mrs. Geumsook Coffee 1972 Client
 
-## ![logo](https://github.com/user-attachments/assets/3a9b1543-b9ea-4884-8547-8807d1b605fc)
+![logo](https://github.com/user-attachments/assets/3a9b1543-b9ea-4884-8547-8807d1b605fc)
 
 ### 🍩 Introduction
 
