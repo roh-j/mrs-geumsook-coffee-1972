@@ -8,6 +8,14 @@ interface SalesProps {
 const Sales = (props: SalesProps) => {
   const { data } = props;
 
+  const maxAmount = Math.max(
+    Number(data.graph_amount_1),
+    Number(data.graph_amount_2),
+    Number(data.graph_amount_3),
+    Number(data.graph_amount_4),
+    Number(data.graph_amount_5)
+  );
+
   return (
     <div className={styles.wrapper}>
       <div>
@@ -66,9 +74,7 @@ const Sales = (props: SalesProps) => {
                   className={styles.bar}
                   style={{
                     height: `${
-                      (Number(data.graph_amount_1) /
-                        Number(data.graph_amount_5)) *
-                      100
+                      (Number(data.graph_amount_1) / maxAmount) * 100
                     }%`,
                   }}
                 ></p>
@@ -92,9 +98,7 @@ const Sales = (props: SalesProps) => {
                   className={styles.bar}
                   style={{
                     height: `${
-                      (Number(data.graph_amount_2) /
-                        Number(data.graph_amount_5)) *
-                      100
+                      (Number(data.graph_amount_2) / maxAmount) * 100
                     }%`,
                   }}
                 ></p>
@@ -118,9 +122,7 @@ const Sales = (props: SalesProps) => {
                   className={styles.bar}
                   style={{
                     height: `${
-                      (Number(data.graph_amount_3) /
-                        Number(data.graph_amount_5)) *
-                      100
+                      (Number(data.graph_amount_3) / maxAmount) * 100
                     }%`,
                   }}
                 ></p>
@@ -144,9 +146,7 @@ const Sales = (props: SalesProps) => {
                   className={styles.bar}
                   style={{
                     height: `${
-                      (Number(data.graph_amount_4) /
-                        Number(data.graph_amount_5)) *
-                      100
+                      (Number(data.graph_amount_4) / maxAmount) * 100
                     }%`,
                   }}
                 ></p>
@@ -158,9 +158,7 @@ const Sales = (props: SalesProps) => {
                   style={{
                     opacity: 0.5,
                     height: `${
-                      (Number(data.graph_amount_5) /
-                        Number(data.graph_amount_5)) *
-                      100
+                      (Number(data.graph_amount_5) / maxAmount) * 100
                     }%`,
                   }}
                 ></p>
