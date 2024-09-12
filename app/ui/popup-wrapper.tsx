@@ -1,5 +1,5 @@
 import Popup from "./popup";
-import { pb } from "../shared/connection";
+import { internalPB } from "../shared/connection";
 import { revalidatePath } from "next/cache";
 
 export interface PopupResponse {
@@ -13,7 +13,7 @@ export interface PopupResponse {
 }
 
 const PopupWrapper = async () => {
-  const data: PopupResponse[] = await pb
+  const data: PopupResponse[] = await internalPB
     .collection("popups")
     .getFullList({ filter: "active = true", sort: "-order", requestKey: null });
 

@@ -1,5 +1,5 @@
 import Sales from "./sales";
-import { pb } from "../shared/connection";
+import { internalPB } from "../shared/connection";
 import { revalidatePath } from "next/cache";
 
 export interface SalesResponse {
@@ -31,7 +31,7 @@ export interface MappedData {
 }
 
 const SalesWrapper = async () => {
-  const data: SalesResponse[] = await pb
+  const data: SalesResponse[] = await internalPB
     .collection("sales")
     .getFullList({ requestKey: null });
 

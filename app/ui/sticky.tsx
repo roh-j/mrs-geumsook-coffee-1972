@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "./sticky.module.css";
-import { pb } from "../shared/connection";
+import { externalPB } from "../shared/connection";
 import { toast } from "react-toastify";
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
@@ -35,7 +35,7 @@ const Sticky = () => {
       content: "",
     };
 
-    const record = await pb.collection("inquiries").create(payload);
+    const record = await externalPB.collection("inquiries").create(payload);
 
     toast.success("문의가 등록되었습니다.");
     reset();

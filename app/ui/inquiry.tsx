@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "./inquiry.module.css";
-import { pb } from "../shared/connection";
+import { externalPB } from "../shared/connection";
 import { toast } from "react-toastify";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
@@ -35,7 +35,7 @@ const Inquiry = () => {
       content: data.content.replace(/\n/g, "<br />"),
     };
 
-    const record = await pb.collection("inquiries").create(payload);
+    const record = await externalPB.collection("inquiries").create(payload);
 
     toast.success("문의가 등록되었습니다.");
     reset();

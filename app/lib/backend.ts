@@ -1,12 +1,13 @@
-import { pb } from "../shared/connection";
+import { externalPB } from "../shared/connection";
 
 const bindCookieToPocketBase = async (request: any) => {
-  pb.authStore.loadFromCookie(request?.headers?.get("cookie") || "");
+  externalPB.authStore.loadFromCookie(request?.headers?.get("cookie") || "");
 
   try {
-    pb.authStore.isValid && (await pb.collection("users").authRefresh());
+    externalPB.authStore.isValid &&
+      (await externalPB.collection("users").authRefresh());
   } catch (_) {
-    pb.authStore.clear();
+    externalPB.authStore.clear();
   }
 };
 
