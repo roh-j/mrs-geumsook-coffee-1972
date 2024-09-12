@@ -1,5 +1,6 @@
 import Sales from "./sales";
 import { pb } from "../shared/connection";
+import { revalidatePath } from "next/cache";
 
 export interface SalesResponse {
   collectionId: string;
@@ -39,6 +40,8 @@ const SalesWrapper = async () => {
   data.forEach((item: SalesResponse) => {
     mappedData[item.target] = item.value;
   });
+
+  revalidatePath("/");
 
   return <Sales data={mappedData} />;
 };
