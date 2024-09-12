@@ -4,7 +4,7 @@ import Cookies from "js-cookie";
 import Draggable from "react-draggable";
 import Image from "next/image";
 import styles from "./popup.module.css";
-import { POCKET_BASE_URL } from "../constants/connection";
+import { POCKET_BASE_EXTERNAL_URL } from "../constants/connection";
 import { PopupResponse } from "./popup-wrapper";
 import { useEffect, useState } from "react";
 
@@ -103,7 +103,7 @@ const Popup = (props: PopupProps) => {
                 <div className={styles.wrapper}>
                   <div className={styles.container}>
                     <Image
-                      src={`${POCKET_BASE_URL}/api/files/${row.collectionName}/${row.id}/${row.image}`}
+                      src={`${POCKET_BASE_EXTERNAL_URL}/api/files/${row.collectionName}/${row.id}/${row.image}`}
                       alt=""
                       width={0}
                       height={0}
