@@ -21,11 +21,9 @@ const Menu = () => {
   return (
     <div id="menu" className={styles.wrapper}>
       <div className={styles.container}>
-        <h3 data-aos-offset="200" data-aos="fade-up">
-          추천메뉴
-        </h3>
+        <h3 data-aos="fade-up">추천메뉴</h3>
         <ul className={styles.bestItems}>
-          <li data-aos-offset="200" data-aos="fade-up">
+          <li data-aos="fade-up">
             <div
               className={`${styles.sticker} animate__animated animate__pulse animate__infinite`}
             >
@@ -42,7 +40,7 @@ const Menu = () => {
             </div>
             <h5>아메리카노</h5>
           </li>
-          <li data-aos-offset="200" data-aos="fade-up">
+          <li data-aos="fade-up">
             <div
               className={`${styles.sticker} animate__animated animate__pulse animate__infinite`}
             >
@@ -59,7 +57,7 @@ const Menu = () => {
             </div>
             <h5>석류 아이스티</h5>
           </li>
-          <li data-aos-offset="200" data-aos="fade-up">
+          <li data-aos="fade-up">
             <div
               className={`${styles.sticker} animate__animated animate__pulse animate__infinite`}
             >
@@ -77,11 +75,7 @@ const Menu = () => {
             <h5>캐모마일티</h5>
           </li>
         </ul>
-        <div
-          data-aos-offset="200"
-          data-aos="zoom-in"
-          className={styles.selection}
-        >
+        <div data-aos="zoom-in" className={styles.selection}>
           <ul>
             {MENU_CATEGORY.map((row, index) => (
               <li
@@ -106,7 +100,7 @@ const Menu = () => {
           )
             .slice(0, pagination)
             .map((row, index) => (
-              <li key={index} data-aos-offset="200" data-aos="fade-up">
+              <li key={index} data-aos="fade-up">
                 <div style={{ width: "100%", aspectRatio: 1, minHeight: 0 }}>
                   <Image
                     key={row.src}

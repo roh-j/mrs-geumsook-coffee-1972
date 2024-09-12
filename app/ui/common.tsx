@@ -15,7 +15,7 @@ const Common = () => {
   useEffect(() => {
     loadPureCounter();
 
-    AOS.init();
+    AOS.init({ offset: 200 });
 
     window.history.scrollRestoration = "manual";
   }, []);

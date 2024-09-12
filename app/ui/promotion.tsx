@@ -6,7 +6,7 @@ const Promotion = () => {
     <>
       <div id="franchise" className={styles.wrapper}>
         <div className={styles.container}>
-          <h3 data-aos-offset="200" data-aos="fade-up">
+          <h3 data-aos="fade-up">
             금숙씨커피{" "}
             <span className="animate__animated animate__flash animate__slow animate__infinite">
               오픈
@@ -14,7 +14,6 @@ const Promotion = () => {
             프로모션
           </h3>
           <div
-            data-aos-offset="200"
             data-aos="zoom-in"
             data-aos-delay="300"
             className={styles.emphasis}
@@ -23,7 +22,6 @@ const Promotion = () => {
           </div>
           <div className={styles.card}>
             <h4
-              data-aos-offset="200"
               data-aos="zoom-in"
               className="animate__animated animate__pulse animate__slower animate__infinite"
             >
@@ -46,7 +44,7 @@ const Promotion = () => {
               />
             </h4>
             <ul className={styles.items}>
-              <li data-aos-offset="200" data-aos="zoom-in">
+              <li data-aos="zoom-in">
                 <div className={styles.badge}>1</div>
                 <h5>
                   창업비{" "}
@@ -61,7 +59,7 @@ const Promotion = () => {
                   </span>
                 </h5>
               </li>
-              <li data-aos-offset="200" data-aos="zoom-in">
+              <li data-aos="zoom-in">
                 <div className={styles.badge}>2</div>
                 <h5>
                   가맹비{" "}
@@ -70,7 +68,7 @@ const Promotion = () => {
                   </span>
                 </h5>
               </li>
-              <li data-aos-offset="200" data-aos="zoom-in">
+              <li data-aos="zoom-in">
                 <div className={styles.badge}>3</div>
                 <h5>
                   계약 이행보증금{" "}
@@ -79,7 +77,7 @@ const Promotion = () => {
                   </span>
                 </h5>
               </li>
-              <li data-aos-offset="200" data-aos="zoom-in">
+              <li data-aos="zoom-in">
                 <div className={styles.badge}>4</div>
                 <h5>
                   인테리어 마진{" "}
@@ -89,7 +87,7 @@ const Promotion = () => {
                   <p>(인테리어 개별시공 가능)</p>
                 </h5>
               </li>
-              <li data-aos-offset="200" data-aos="zoom-in">
+              <li data-aos="zoom-in">
                 <div className={styles.badge}>5</div>
                 <h6>한정 프로모션 혜택</h6>
                 <h5>
@@ -98,7 +96,7 @@ const Promotion = () => {
                   상당의 집기 지원
                 </h5>
               </li>
-              <li data-aos-offset="200" data-aos="zoom-in">
+              <li data-aos="zoom-in">
                 <div className={styles.badge}>6</div>
                 <h5>
                   로얄티 매출의 2.5%{" "}
@@ -116,13 +114,13 @@ const Promotion = () => {
       </div>
       <div className={styles.darkWrapper}>
         <div className={styles.darkContainer}>
-          <h3 data-aos-offset="200" data-aos="fade-up">
+          <h3 data-aos="fade-up">
             금숙씨커피1972는 점포 개설의 속도가 아닌 방향에 초점을 맞추어
             <br />
             반드시 성공하실 수 있도록{" "}
             <strong>'금숙씨 만의 성공 운영 시스템'</strong>을 도입했습니다.
           </h3>
-          <table data-aos-offset="200" data-aos="fade-up">
+          <table data-aos="fade-up">
             <colgroup>
               <col />
               <col />

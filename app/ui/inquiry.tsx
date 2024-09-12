@@ -47,10 +47,8 @@ const Inquiry = () => {
     <>
       <div id="inquiry" className={styles.wrapper}>
         <div className={styles.container}>
-          <h4 data-aos-offset="200" data-aos="fade-up">
-            금숙씨커피와 함께 하실
-          </h4>
-          <h3 data-aos-offset="200" data-aos="zoom-in" data-aos-delay="300">
+          <h4 data-aos="fade-up">금숙씨커피와 함께 하실</h4>
+          <h3 data-aos="zoom-in" data-aos-delay="300">
             <strong>가족점</strong> 모집
           </h3>
           <div className={styles.privacy} data-aos="fade-up">
@@ -92,7 +90,6 @@ const Inquiry = () => {
           </h5>
           <form
             onSubmit={handleSubmit((data) => submitInquiry(data))}
-            data-aos-offset="200"
             data-aos="fade-up"
           >
             <ul className={styles.form}>

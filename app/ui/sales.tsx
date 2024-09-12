@@ -1,23 +1,26 @@
 import styles from "./sales.module.css";
+import { MappedData } from "./sales-wrapper";
 
-const Sales = () => {
+interface SalesProps {
+  data: MappedData;
+}
+
+const Sales = (props: SalesProps) => {
+  const { data } = props;
+
   return (
     <div className={styles.wrapper}>
       <div>
-        <div
-          className={styles.mobileTop}
-          data-aos-offset="200"
-          data-aos="fade-up"
-        >
+        <div className={styles.mobileTop} data-aos="fade-up">
           <h4>
-            24년 7월 달 일일 매출{" "}
+            {data.daily_sales_label}{" "}
             <strong>
               신기록{" "}
               <span
                 className="purecounter"
                 data-purecounter-duration="1"
                 data-purecounter-start="0"
-                data-purecounter-end="12322180"
+                data-purecounter-end={data.daily_sales_amount}
                 data-purecounter-once="false"
                 data-purecounter-separator=","
               >
@@ -30,22 +33,20 @@ const Sales = () => {
             금숙씨커피본점 <strong>8평 매장</strong>
             <br />
             <strong className="animate__animated animate__flash animate__slower animate__infinite">
-              월 매출 2억원 달성!!!
+              {data.monthly_sales_label}
             </strong>
           </h3>
         </div>
         <div className={styles.container}>
-          <div className={styles.chart} data-aos-offset="200" data-aos="">
+          <div className={styles.chart} data-aos="">
             <div className={styles.sticker}>
               <p className="animate__animated animate__pulse animate__infinite">
-                아메리카노
-                <br />
-                11,739잔
-                <br />
-                판매
+                {data.graph_label_5_emphasis}
               </p>
             </div>
-            <div className={styles.strong}>230,435,710원</div>
+            <div className={styles.strong}>
+              {Number(data.graph_amount_5).toLocaleString()}원
+            </div>
             <ul>
               <li>
                 <span className={styles.amount}>
@@ -53,7 +54,7 @@ const Sales = () => {
                     className="purecounter"
                     data-purecounter-duration="1"
                     data-purecounter-start="0"
-                    data-purecounter-end="94888490"
+                    data-purecounter-end={data.graph_amount_1}
                     data-purecounter-once="false"
                     data-purecounter-separator=","
                   >
@@ -61,8 +62,17 @@ const Sales = () => {
                   </span>
                   원
                 </span>
-                <p className={styles.bar}></p>
-                <p className={styles.label}>24'3월</p>
+                <p
+                  className={styles.bar}
+                  style={{
+                    height: `${
+                      (Number(data.graph_amount_1) /
+                        Number(data.graph_amount_5)) *
+                      100
+                    }%`,
+                  }}
+                ></p>
+                <p className={styles.label}>{data.graph_label_1}</p>
               </li>
               <li>
                 <span className={styles.amount}>
@@ -70,7 +80,7 @@ const Sales = () => {
                     className="purecounter"
                     data-purecounter-duration="1.1"
                     data-purecounter-start="0"
-                    data-purecounter-end="104313420"
+                    data-purecounter-end={data.graph_amount_2}
                     data-purecounter-once="false"
                     data-purecounter-separator=","
                   >
@@ -78,8 +88,17 @@ const Sales = () => {
                   </span>
                   원
                 </span>
-                <p className={styles.bar}></p>
-                <p className={styles.label}>4월</p>
+                <p
+                  className={styles.bar}
+                  style={{
+                    height: `${
+                      (Number(data.graph_amount_2) /
+                        Number(data.graph_amount_5)) *
+                      100
+                    }%`,
+                  }}
+                ></p>
+                <p className={styles.label}>{data.graph_label_2}</p>
               </li>
               <li>
                 <span className={styles.amount}>
@@ -87,7 +106,7 @@ const Sales = () => {
                     className="purecounter"
                     data-purecounter-duration="1.2"
                     data-purecounter-start="0"
-                    data-purecounter-end="144966770"
+                    data-purecounter-end={data.graph_amount_3}
                     data-purecounter-once="false"
                     data-purecounter-separator=","
                   >
@@ -95,8 +114,17 @@ const Sales = () => {
                   </span>
                   원
                 </span>
-                <p className={styles.bar}></p>
-                <p className={styles.label}>5월</p>
+                <p
+                  className={styles.bar}
+                  style={{
+                    height: `${
+                      (Number(data.graph_amount_3) /
+                        Number(data.graph_amount_5)) *
+                      100
+                    }%`,
+                  }}
+                ></p>
+                <p className={styles.label}>{data.graph_label_3}</p>
               </li>
               <li>
                 <span className={styles.amount}>
@@ -104,7 +132,7 @@ const Sales = () => {
                     className="purecounter"
                     data-purecounter-duration="1.3"
                     data-purecounter-start="0"
-                    data-purecounter-end="200700770"
+                    data-purecounter-end={data.graph_amount_4}
                     data-purecounter-once="false"
                     data-purecounter-separator=","
                   >
@@ -112,29 +140,44 @@ const Sales = () => {
                   </span>
                   원
                 </span>
-                <p className={styles.bar}></p>
-                <p className={styles.label}>6월</p>
+                <p
+                  className={styles.bar}
+                  style={{
+                    height: `${
+                      (Number(data.graph_amount_4) /
+                        Number(data.graph_amount_5)) *
+                      100
+                    }%`,
+                  }}
+                ></p>
+                <p className={styles.label}>{data.graph_label_4}</p>
               </li>
               <li>
-                <p className={styles.bar} style={{ opacity: 0.5 }}></p>
-                <p className={styles.label}>7월</p>
+                <p
+                  className={styles.bar}
+                  style={{
+                    opacity: 0.5,
+                    height: `${
+                      (Number(data.graph_amount_5) /
+                        Number(data.graph_amount_5)) *
+                      100
+                    }%`,
+                  }}
+                ></p>
+                <p className={styles.label}>{data.graph_label_5}</p>
               </li>
             </ul>
           </div>
-          <div
-            className={styles.description}
-            data-aos-offset="200"
-            data-aos="fade-up"
-          >
+          <div className={styles.description} data-aos="fade-up">
             <h4>
-              24년 7월 달 일일 매출{" "}
+              {data.daily_sales_label}{" "}
               <strong>
                 신기록{" "}
                 <span
                   className="purecounter"
                   data-purecounter-duration="1"
                   data-purecounter-start="0"
-                  data-purecounter-end="12322180"
+                  data-purecounter-end={data.daily_sales_amount}
                   data-purecounter-once="false"
                   data-purecounter-separator=","
                 >
@@ -147,7 +190,7 @@ const Sales = () => {
               금숙씨커피본점 <strong>8평 매장</strong>
               <br />
               <strong className="animate__animated animate__flash animate__slower animate__infinite">
-                월 매출 2억원 달성!!!
+                {data.monthly_sales_label}
               </strong>
             </h3>
             <p>
@@ -162,11 +205,7 @@ const Sales = () => {
             </p>
           </div>
         </div>
-        <div
-          className={styles.mobileBottom}
-          data-aos-offset="200"
-          data-aos="fade-up"
-        >
+        <div className={styles.mobileBottom} data-aos="fade-up">
           <p>
             8평의 기적 수원의 전설이 되다.
             <br />

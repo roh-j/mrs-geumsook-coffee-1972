@@ -12,7 +12,7 @@ const Hero = () => {
             <h3>
               <strong>대한민국</strong> 엄마의 자존심
               <br />
-              <strong>금숙씨</strong>가 만들면 다 맛있습니다.
+              <strong>금숙씨</strong>가 만들면 다 맛있읍니다.
             </h3>
           </div>
           <div

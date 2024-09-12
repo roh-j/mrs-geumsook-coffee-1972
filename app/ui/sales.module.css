@@ -127,6 +127,7 @@
   height: 180px;
   text-align: center;
   line-height: 1.4;
+  white-space: pre-line;
   color: #fff;
   font-size: 26px;
   font-weight: bold;
@@ -255,32 +256,30 @@
   opacity: 0.2;
   background-color: #846655;
   width: 100%;
-  height: 0;
+}
+
+.chart:global(:not(.aos-animate)) .bar {
+  height: 0 !important;
 }
 
 .chart:global(.aos-animate) li:nth-child(1) .bar {
   transition-delay: 0.2s;
-  height: 41.17%;
 }
 
 .chart:global(.aos-animate) li:nth-child(2) .bar {
   transition-delay: 0.4s;
-  height: 45.26%;
 }
 
 .chart:global(.aos-animate) li:nth-child(3) .bar {
   transition-delay: 0.6s;
-  height: 62.9%;
 }
 
 .chart:global(.aos-animate) li:nth-child(4) .bar {
   transition-delay: 0.8s;
-  height: 87.09%;
 }
 
 .chart:global(.aos-animate) li:nth-child(5) .bar {
   transition-delay: 1s;
-  height: 100%;
 }
 
 .label {

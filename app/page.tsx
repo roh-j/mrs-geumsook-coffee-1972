@@ -11,7 +11,7 @@ import PopupWrapper from "./ui/popup-wrapper";
 import President from "./ui/president";
 import Promotion from "./ui/promotion";
 import Review from "./ui/review";
-import Sales from "./ui/sales";
+import SalesWrapper from "./ui/sales-wrapper";
 import Sticky from "./ui/sticky";
 import { Suspense } from "react";
 
@@ -21,7 +21,9 @@ const MainPage = () => {
       <Header />
       <Hero />
       <Introduction />
-      <Sales />
+      <Suspense>
+        <SalesWrapper />
+      </Suspense>
       <Differentiation />
       <Feature />
       <Review />
