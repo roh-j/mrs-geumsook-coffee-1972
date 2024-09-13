@@ -20,8 +20,8 @@
   flex-direction: column;
   align-items: center;
   border: 1px solid #846655;
-  cursor: grab;
-  width: 576px;
+  cursor: move;
+  width: 574px;
 
   @media (max-width: 575.98px) {
     width: calc(100vw - 20px);
