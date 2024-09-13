@@ -96,6 +96,9 @@ const Popup = (props: PopupProps) => {
     <>
       {isReady && (
         <>
+          {popups.filter((row: PopupsState) => row.isVisible).length && (
+            <div className={styles.backdrop}></div>
+          )}
           {popups
             .filter((row: PopupsState) => row.isVisible)
             .map((row: PopupsState, index: number) => (
