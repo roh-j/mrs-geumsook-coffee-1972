@@ -62,14 +62,12 @@ const Popup = (props: PopupProps) => {
 
     const today = new Date();
     const expires = new Date(
-      Date.UTC(
-        today.getFullYear(),
-        today.getMonth(),
-        today.getDate(),
-        23,
-        59,
-        59
-      )
+      today.getFullYear(),
+      today.getMonth(),
+      today.getDate(),
+      23,
+      59,
+      59
     );
 
     Cookies.set(`popup_${id}`, "1", {
