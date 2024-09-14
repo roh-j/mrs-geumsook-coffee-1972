@@ -102,7 +102,7 @@ const Popup = (props: PopupProps) => {
           {popups
             .filter((row: PopupsState) => row.isVisible)
             .map((row: PopupsState) => (
-              <Draggable key={row.id} positionOffset={{ x: "-50%", y: "-50%" }}>
+              <Draggable key={row.id} positionOffset={{ x: "-50%", y: "80px" }}>
                 <div className={styles.wrapper}>
                   <div className={styles.container}>
                     <Image
